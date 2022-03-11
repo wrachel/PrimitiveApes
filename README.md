@@ -58,11 +58,22 @@ A successful project functions properly to create random seating charts, but als
 ## Team Roles:
 #### Scrum Master: Rachel Wei
 As the Scrum Master, Rachel is responsible for...
-
+1. organizing team activity
+2. managing the scrum board
 #### Github Admin: Calvin Cheah
+As the Github Admin, Calvin is responsible for...
+1. organizing branches
 #### Technical Officer: Yajat Yadav
+As the Technical Officer, Yajat is responsible for...
+1. 
 #### Design Manager: Devam Shrivastava
+As the Design Manager, Devam is responsible for...
+1. managing the CSS and layouts
+2. designing the overall theme and style of the website
 #### Deployment Manager: Harry Li
+As the Depolyment Manager, Harry is responsible for...
+1. depolying the website
+2. keeping the deployed website up to date
 
 ## Usage:
 Clone project and run the project locally. Deployed website coming soon.
