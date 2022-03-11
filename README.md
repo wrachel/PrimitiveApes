@@ -42,7 +42,7 @@ Home page example:
 
 
 
-Names will either be displayed in a table like so:
+/ Names will either be displayed in a table like so:/
 ![Wireframe](https://user-images.githubusercontent.com/40574565/157778515-ca146e92-d57d-4f29-892b-785428cdd2e3.jpeg)
 * This will be easiest to accomodate teachers with different table group sizes, and make the website more adaptable and personalizable even if it is "uglier"
 * We could have a "diagram" of tables, but this would be hard to accomodate for if we want to expand to different classrooms which may have different class setups.
