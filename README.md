@@ -37,6 +37,11 @@ Our website will have many pages and a navigation bar to access those pages.
 
 The home page will have: 1) who we are       2) our project idea & inspiration     3)How to access our github/ guide
 
+Home page example:
+![Home Page](https://user-images.githubusercontent.com/40574565/157780123-ac5e6886-6f5c-4720-9def-595de35d1a04.png)
+
+
+
 Names will either be displayed in a table like so:
 ![Wireframe](https://user-images.githubusercontent.com/40574565/157778515-ca146e92-d57d-4f29-892b-785428cdd2e3.jpeg)
 * This will be easiest to accomodate teachers with different table group sizes, and make the website more adaptable and personalizable even if it is "uglier"
