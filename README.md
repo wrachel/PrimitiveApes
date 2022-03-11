@@ -3,8 +3,9 @@
 ### GitHub Contributors: Calvin Cheah, Rachel Wei, Harry Li, Yajat Yadav, Devam Shrivastava
 
 ### Scrum Team Members and Contributions
-m221p2-primitive-apes  | [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2) | [Repo Contributors](https://github.com/wrachel/PrimitiveApes/graphs/contributors) | ------ | ------ | ------ | ------ |
------- | ------ | ------ | ------ | ------ | ------ | ------ |
+###### [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2) 
+###### [Repo Contributors](https://github.com/wrachel/PrimitiveApes/graphs/contributors) 
+
 Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile | Individual Repl.it |
 Devam Shrivastava (Design Manager) | devamshri | [Issues]() | [Scrum Board]() | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=kylem314)| [Profile](https://github.com/devamshri) | [Repl]()
 Calvin (Github Admin) | 1855387 | [Issues](https://github.com/yajatyadav/intellijs/labels/Charlie%20Zhu) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3A1855387) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=1855387) | [Profile](https://github.com/1855387) | [Add Repl]() |
