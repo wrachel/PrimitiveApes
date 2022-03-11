@@ -23,6 +23,12 @@ Our website was created to help teachers easily create random seating charts tha
 
 #### Project Owner: Mr. Jenkins
 
+## Project Idea & Wireframes:
+
+
+## Success Idea (What a successful project looks like)
+
+
 ## Usage:
 Clone project and run the project locally. Deployed website coming soon.
 
