@@ -55,6 +55,13 @@ Fits the MVC requirements & will look something like this:
 ## Success Idea (What a successful project looks like)
 A successful project functions properly to create random seating charts, but also allows user to move around cells in the table. It will be something Mr. Jenkins is satisfied with and is actually capable of creating something random. 
 
+## Team Roles:
+Scrum Master: Rachel Wei
+Github Admin: Calvin Cheah
+Technical Officer: Yajat Yadav
+Design Manager: Devam Shrivastava
+Deployment Manager: Harry Li
+
 ## Usage:
 Clone project and run the project locally. Deployed website coming soon.
 
