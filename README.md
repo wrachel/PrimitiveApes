@@ -21,9 +21,26 @@ Our website is a seating chart generator, which will allow a user to input names
 ## Purpose:
 Our website was created to help teachers easily create random seating charts that they can also customize. Our project owner is Mr. Jenkins, an AP Statistics teacher at Del Norte High School who has a use for a website like this. Our website models basic requirements and suggestions given by Mr. Jenkins to create a useful and easy-to-use seating chart generator. 
 
-#### Project Owner: Mr. Jenkins
+## Project Owner: Mr. Jenkins
+### Requirements from project owner:
+* Randomly generate the seating chart
+* Have an easy-to-use function for inputting names (either drop a .txt file or something along those lines)
+* Have a feature where, after the seating chart is generated, students can be moved around as the user would see fit
+
+OTHER FEATURES THAT MAY BE HELPFUL
+* data presets --> store (in a database potentially) what old tables looked like 
+
 
 ## Project Idea & Wireframes:
+
+
+
+Names will either be displayed in a table like so:
+![Wireframe](https://user-images.githubusercontent.com/40574565/157778515-ca146e92-d57d-4f29-892b-785428cdd2e3.jpeg)
+* This will be easiest to accomodate teachers with different table group sizes, and make the website more adaptable and personalizable even if it is "uglier"
+or with a visual diagram like so: 
+![image](https://user-images.githubusercontent.com/40574565/157778653-ed296b26-b755-4520-bf37-1f9396a4d350.png)
+* Definitely less practical, but would look nicer.
 
 
 ## Success Idea (What a successful project looks like)
