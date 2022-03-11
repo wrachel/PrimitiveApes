@@ -4,6 +4,7 @@
 
 ### Scrum Team Members and Contributions
 ##### [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2) 
+##### [Github Pages](https://wrachel.github.io/PrimitiveApes/)
 ##### [Repo Contributors](https://github.com/wrachel/PrimitiveApes/graphs/contributors) 
 
 | Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile | Individual Repl.it |
