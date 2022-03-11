@@ -17,19 +17,24 @@ Harry Li (Deployment Manager) | wiz124 | [Issues](https://github.com/yajatyadav/
 
 
 ## Ideation:
-Our website is a seating chart generator, which will allow a user to input names of students from their class and will return a random seating chart. Users will be able to easily create random groups of a size of their choosing, in addition to future features like being able to move people around, etc.
+Our website is a seating chart generator, which will allow a user to input names of students from their class and will return a random seating chart of a defined table size. Users will be able to easily create random groups of a size of their choosing in a 9 X 9 grid,in addition to future features like being able to move people around and the ability to increase text and grid size for improved visablity. 
 
 ## Purpose:
-Our website was created to help teachers easily create random seating charts that they can also customize. Our project owner is Mr. Jenkins, an AP Statistics teacher at Del Norte High School who has a use for a website like this. Our website models basic requirements and suggestions given by Mr. Jenkins to create a useful and easy-to-use seating chart generator. 
+Our website will help teachers easily create random seating charts that they can also customize. Our project owner is Mr. Jenkins, an AP Statistics teacher at Del Norte High School who often uses a program to create his seating chart. Our website models basic requirements and suggestions given by Mr. Jenkins to create a useful and easy-to-use seating chart generator. 
 
 ## Project Owner: Mr. Jenkins
+####Del Norte math teacher
+
 ### Requirements from project owner:
 * Randomly generate the seating chart
 * Have an easy-to-use function for inputting names (either drop a .txt file or something along those lines)
 * Have a feature where, after the seating chart is generated, students can be moved around as the user would see fit (e.g. move cells in the table)
+* the ability to increase text and grid size for improved visablity
+* grid will automatically resize to adapt to avaliable space on program window
 
 OTHER FEATURES THAT MAY BE HELPFUL
 * data presets --> store (in a database potentially) what old tables looked like 
+* have students formatteed in a 9 by 9 grid
 
 
 ## Project Idea & Wireframes:
