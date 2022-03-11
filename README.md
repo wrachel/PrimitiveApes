@@ -56,7 +56,7 @@ Fits the MVC requirements & will look something like this:
 A successful project functions properly to create random seating charts, but also allows user to move around cells in the table. It will be something Mr. Jenkins is satisfied with and is actually capable of creating something random. 
 
 ## Team Roles:
-#### Scrum Master: Rachel Wei
+#### **Scrum Master**: Rachel Wei
 As the Scrum Master, Rachel is responsible for...
 
 #### Github Admin: Calvin Cheah
