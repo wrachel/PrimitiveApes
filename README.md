@@ -22,8 +22,7 @@ Our website is a seating chart generator, which will allow a user to input names
 ## Purpose:
 Our website will help teachers easily create random seating charts that they can also customize. Our project owner is Mr. Jenkins, an AP Statistics teacher at Del Norte High School who often uses a program to create his seating chart. Our website models basic requirements and suggestions given by Mr. Jenkins to create a useful and easy-to-use seating chart generator. 
 
-## Project Owner: Mr. Jenkins
-####Del Norte math teacher
+## Project Owner: Mr. Jenkins, Del Norte math teacher
 
 ### Requirements from project owner:
 * Randomly generate the seating chart
