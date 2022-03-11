@@ -33,15 +33,14 @@ OTHER FEATURES THAT MAY BE HELPFUL
 
 ## Project Idea & Wireframes:
 
+Our website will have many pages and a navigation bar to access those pages.
 
+The home page will have: 1) who we are       2) our project idea & inspiration     3)How to access our github/ guide
 
 Names will either be displayed in a table like so:
 ![Wireframe](https://user-images.githubusercontent.com/40574565/157778515-ca146e92-d57d-4f29-892b-785428cdd2e3.jpeg)
 * This will be easiest to accomodate teachers with different table group sizes, and make the website more adaptable and personalizable even if it is "uglier"
-<--
-or with a visual diagram like so: 
-![image](https://user-images.githubusercontent.com/40574565/157778653-ed296b26-b755-4520-bf37-1f9396a4d350.png)
-* Definitely less practical, but would look nicer.
+* We could have a "diagram" of tables, but this would be hard to accomodate for if we want to expand to different classrooms which may have different class setups.
 
 
 ## Success Idea (What a successful project looks like)
