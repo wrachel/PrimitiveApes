@@ -16,7 +16,7 @@ Rachel Wei (Scrum Master) | wrachel | [Issues](https://github.com/wrachel/Primit
 Harry Li (Deployment Manager) | wiz124 | [Issues](https://github.com/yajatyadav/intellijs/issues/assigned/macddmac) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Amacddmac) | [Commmits](https://github.com/yajatyadav/intellijs/commits?author=wiz124) | [Profile](https://github.com/wiz124) | [Repl](https://replit.com/@HarryLi11/individual#.replit) [jekyll](https://wiz124.github.io/individual/) |
 
 
-## Ideation: Seatanize
+## Ideation: Seater
 Our website is a seating chart generator, which will allow a user to input names of students from their class and will return a random seating chart of a defined table size. Users will be able to easily create random groups of a size of their choosing in a 9 X 9 grid,in addition to future features like being able to move people around and the ability to increase text and grid size for improved visablity. 
 
 ## Purpose:
