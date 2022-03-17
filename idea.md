@@ -1,3 +1,4 @@
+{% include navigation.html %}
 ## Project Idea & Wireframes:
 
 Our website will have many pages and a navigation bar to access those pages.
