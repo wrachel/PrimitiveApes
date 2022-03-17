@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 ## PrimitiveApes README
 
 ### GitHub Contributors: Calvin Cheah, Rachel Wei, Harry Li, Yajat Yadav, Devam Shrivastava
