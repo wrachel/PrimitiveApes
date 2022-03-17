@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 ## Project Owner: Mr. Jenkins, Del Norte math teacher
 
 ### Requirements from project owner:
