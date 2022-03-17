@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 ## Team Roles:
 #### Scrum Master: Rachel Wei
 As the Scrum Master, Rachel is responsible for...
