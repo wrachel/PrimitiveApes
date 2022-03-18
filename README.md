@@ -10,7 +10,8 @@
 ##### [Repo Contributors](https://github.com/wrachel/PrimitiveApes/graphs/contributors) 
 
 <details>
-
+  <summary> CLICK ME TO SEE OUR INDIVIDUAL CONTRIBUTORS & THEIR LINKS </summary>
+  
 | Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile | Individual Repl.it | Individual Repo Page | Individual Git Pages |
 | --------------- | --------- | ----- | ----------- | ------- | ------- | ------------------ | ---------------------- | -------------------- |
 Devam Shrivastava (Design Manager) | devamshri | [Issues](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Adevamshri) | [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Adevamshri) | [Commit Page](https://github.com/wrachel/PrimitiveApes/commits?author=devamshri)| [Profile](https://github.com/devamshri) | [Repl](https://replit.com/@D3vIs4G0d/Tri3DevamChallenges) & [INDIVIDUAL GITHUB PAGES](https://github.com/devamshri/Tri_3_Devam_Challenges/) |
