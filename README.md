@@ -18,11 +18,11 @@ Rachel Wei (Scrum Master) | wrachel | [Issues](https://github.com/wrachel/Primit
 Harry Li (Deployment Manager) | wiz124 | [Issues](https://github.com/yajatyadav/intellijs/issues/assigned/macddmac) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Amacddmac) | [Commmits](https://github.com/yajatyadav/intellijs/commits?author=wiz124) | [Profile](https://github.com/wiz124) | [Repl](https://replit.com/@HarryLi11/individual#.replit) [jekyll](https://wiz124.github.io/individual/) |
 
 ### Github Stats
- ![Rachel's Github stats](https://github-readme-stats.vercel.app/api?username=wrachel&show_icons=true&theme=tokyonight)
+![Rachel's Github stats](https://github-readme-stats.vercel.app/api?username=wrachel&show_icons=true&theme=tokyonight)
 ![Calvin's Github stats](https://github-readme-stats.vercel.app/api?username=QwikSP&show_icons=true&theme=tokyonight)
-  ![Devam's Github stats](https://github-readme-stats.vercel.app/api?username=devamshri&show_icons=true&theme=tokyonight)
-  ![Yajat's Github stats](https://github-readme-stats.vercel.app/api?username=yajatyadav&show_icons=true&theme=tokyonight)
-  ![Harry's Github stats](https://github-readme-stats.vercel.app/api?username=wiz124&show_icons=true&theme=tokyonight)
+![Devam's Github stats](https://github-readme-stats.vercel.app/api?username=devamshri&show_icons=true&theme=tokyonight)
+![Yajat's Github stats](https://github-readme-stats.vercel.app/api?username=yajatyadav&show_icons=true&theme=tokyonight)
+![Harry's Github stats](https://github-readme-stats.vercel.app/api?username=wiz124&show_icons=true&theme=tokyonight)
 
   
 ## Ideation: Seater
