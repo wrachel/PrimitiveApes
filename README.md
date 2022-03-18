@@ -33,8 +33,6 @@ Our website will help teachers easily create random seating charts that they can
 
 
 ## How to Run & Contribute
-<details>
-  <summary>Want to know how to run and contribute to our project? CLICK HERE:</summary>
   
 ## Usage:
 Clone project and run the project locally. Deployed website coming soon.
@@ -50,5 +48,10 @@ Go to localhost:8080 in a web browser to view our running website
 ## How to contribute: 
 See `contributing.md`(to be added).
 NOTE: Although this may be obvious, please do not push any broken code. Thanks. 
-  </details>
+
+<details>
+  <summary>Click for a secret message!</summary>
+  <p> Mr. Mortensen is my favorite teacher <p>
+</details>  
+  
 
