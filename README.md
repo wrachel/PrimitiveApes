@@ -24,7 +24,8 @@ Harry Li (Deployment Manager) | wiz124 | [Issues](https://github.com/yajatyadav/
 
 <details>
   <summary> Click to see our github stats for each individual </summary>
-  ![Github stats](https://github-readme-stats.vercel.app/api?username=wrachel&theme=highcontrast&show_icons=true&count_private=true)
+  ![Rachel's Github stats](https://github-readme-stats.vercel.app/api?username=wrachel&show_icons=true&theme=tokyonight)
+
 </details>  
   
 ## Ideation: Seater
