@@ -8,9 +8,6 @@
 ##### [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2) 
 ##### [Github Pages](https://wrachel.github.io/PrimitiveApes/)
 ##### [Repo Contributors](https://github.com/wrachel/PrimitiveApes/graphs/contributors) 
-
-<details>
-  <summary> CLICK ME TO SEE OUR INDIVIDUAL CONTRIBUTORS & THEIR LINKS </summary>
   
 | Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile | Individual Repl.it | Individual Repo Page | Individual Git Pages |
 | --------------- | --------- | ----- | ----------- | ------- | ------- | ------------------ | ---------------------- | -------------------- |
@@ -20,11 +17,10 @@ Yajat Yadav (Technical Officer) | yajatyadav | [Issues](https://github.com/wrach
 Rachel Wei (Scrum Master) | wrachel | [Issues](https://github.com/wrachel/PrimitiveApes/issues?q=assignee%3Awrachel) | [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Awrachel) | [Commit Page](https://github.com/wrachel/PrimitiveApes/commits?author=wrachel) | [Profile](https://github.com/wrachel/PrimitiveApes/commits?author=wrachel) | [INDIVIDUAL Replit](https://replit.com/@RachelWei1/Data-Structures-Indiv#Main.java)| [Individual Repo](https://github.com/wrachel/tri3Individual) | [Individual Github Pages](https://wrachel.github.io/tri3Individual/) | 
 Harry Li (Deployment Manager) | wiz124 | [Issues](https://github.com/yajatyadav/intellijs/issues/assigned/macddmac) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Amacddmac) | [Commmits](https://github.com/yajatyadav/intellijs/commits?author=wiz124) | [Profile](https://github.com/wiz124) | [Repl](https://replit.com/@HarryLi11/individual#.replit) [jekyll](https://wiz124.github.io/individual/) |
 
-</details>
 
 <details>
   <summary> Click to see our github stats for each individual </summary>
-  ![Rachel's Github stats](https://github-readme-stats.vercel.app/api?username=wrachel&show_icons=true&theme=tokyonight)
+ [Rachel's Github stats](https://github-readme-stats.vercel.app/api?username=wrachel&show_icons=true&theme=tokyonight)
 ![Calvin's Github stats](https://github-readme-stats.vercel.app/api?username=QwikSP&show_icons=true&theme=tokyonight)
   ![Devam's Github stats](https://github-readme-stats.vercel.app/api?username=devamshri&show_icons=true&theme=tokyonight)
   ![Yajat's Github stats](https://github-readme-stats.vercel.app/api?username=yajatyadav&show_icons=true&theme=tokyonight)
