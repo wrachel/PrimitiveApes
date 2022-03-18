@@ -24,64 +24,8 @@ Our website is a seating chart generator, which will allow a user to input names
 ## Purpose:
 Our website will help teachers easily create random seating charts that they can also customize. Our project owner is Mr. Jenkins, an AP Statistics teacher at Del Norte High School who often uses a program to create his seating chart. Our website models basic requirements and suggestions given by Mr. Jenkins to create a useful and easy-to-use seating chart generator. 
 
-## Project Owner: Mr. Jenkins, Del Norte math teacher
-
-### Requirements from project owner:
-* Randomly generate the seating chart
-* Have an easy-to-use function for inputting names (either drop a .txt file or something along those lines)
-* Have a feature where, after the seating chart is generated, students can be moved around as the user would see fit (e.g. move cells in the table)
-* the ability to increase text and grid size for improved visablity
-* grid will automatically resize to adapt to avaliable space on program window
-
-OTHER FEATURES THAT MAY BE HELPFUL
-* data presets --> store (in a database potentially) what old tables looked like 
-* have students formatteed in a 9 by 9 grid
-
-
-## Project Idea & Wireframes:
-
-Our website will have many pages and a navigation bar to access those pages.
-
-The home page will have: 1) who we are       2) our project idea & inspiration     3)How to access our github/ guide
-
-Home page example:
-![Home Page](https://user-images.githubusercontent.com/40574565/157780123-ac5e6886-6f5c-4720-9def-595de35d1a04.png)
-
-##### Form for teachers to enter specific requirements
-Fits the MVC requirements & will look something like this: 
-![image](https://user-images.githubusercontent.com/40574565/157780850-ff6eaabb-3362-40e0-8381-f889e46ac0ad.png)
-
-
-##### The seating chart will have names likely  be displayed in a table like so:
-![Wireframe](https://user-images.githubusercontent.com/40574565/157778515-ca146e92-d57d-4f29-892b-785428cdd2e3.jpeg)
-* This will be easiest to accomodate teachers with different table group sizes, and make the website more adaptable and personalizable even if it is "uglier"
-* We could have a "diagram" of tables, but this would be hard to accomodate for if we want to expand to different classrooms which may have different class setups.
-* Note, the seating chart will also have features to 
-
 ## Success Idea (What a successful project looks like)
 A successful project functions properly to create random seating charts, but also allows user to move around cells in the table. It will be something Mr. Jenkins is satisfied with and is actually capable of creating something random. 
-
-## Team Roles:
-#### Scrum Master: Rachel Wei
-As the Scrum Master, Rachel is responsible for...
-1. organizing team activity
-2. managing the scrum board
-#### Github Admin: Calvin Cheah
-As the Github Admin, Calvin is responsible for...
-1. organizing branches
-#### Technical Officer: Yajat Yadav
-As the Technical Officer, Yajat is responsible for...
-1. Creating a database for the student info (grade, table number, etc.)
-2. Creating algorithms to randomize and save student assignment + manual modifications by teacher
-4. Implementing different options for user to input data (excel files, txt files, manual entry)
-#### Design Manager: Devam Shrivastava
-As the Design Manager, Devam is responsible for...
-1. managing the CSS and layouts
-2. designing the overall theme and style of the website
-#### Deployment Manager: Harry Li
-As the Depolyment Manager, Harry is responsible for...
-1. depolying the website
-2. keeping the deployed website up to date
 
 ## Usage:
 Clone project and run the project locally. Deployed website coming soon.
