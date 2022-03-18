@@ -25,6 +25,11 @@ Harry Li (Deployment Manager) | wiz124 | [Issues](https://github.com/yajatyadav/
 <details>
   <summary> Click to see our github stats for each individual </summary>
   ![Rachel's Github stats](https://github-readme-stats.vercel.app/api?username=wrachel&show_icons=true&theme=tokyonight)
+![Calvin's Github stats](https://github-readme-stats.vercel.app/api?username=QwikSP&show_icons=true&theme=tokyonight)
+  ![Devam's Github stats](https://github-readme-stats.vercel.app/api?username=devamshri&show_icons=true&theme=tokyonight)
+  ![Yajat's Github stats](https://github-readme-stats.vercel.app/api?username=yajatyadav&show_icons=true&theme=tokyonight)
+  ![Harry's Github stats](https://github-readme-stats.vercel.app/api?username=wiz124&show_icons=true&theme=tokyonight)
+
 
 </details>  
   
