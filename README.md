@@ -9,6 +9,8 @@
 ##### [Github Pages](https://wrachel.github.io/PrimitiveApes/)
 ##### [Repo Contributors](https://github.com/wrachel/PrimitiveApes/graphs/contributors) 
 
+<details>
+
 | Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile | Individual Repl.it | Individual Repo Page | Individual Git Pages |
 | --------------- | --------- | ----- | ----------- | ------- | ------- | ------------------ | ---------------------- | -------------------- |
 Devam Shrivastava (Design Manager) | devamshri | [Issues](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Adevamshri) | [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Adevamshri) | [Commit Page](https://github.com/wrachel/PrimitiveApes/commits?author=devamshri)| [Profile](https://github.com/devamshri) | [Repl](https://replit.com/@D3vIs4G0d/Tri3DevamChallenges) & [INDIVIDUAL GITHUB PAGES](https://github.com/devamshri/Tri_3_Devam_Challenges/) |
@@ -17,7 +19,8 @@ Yajat Yadav (Technical Officer) | yajatyadav | [Issues](https://github.com/wrach
 Rachel Wei (Scrum Master) | wrachel | [Issues](https://github.com/wrachel/PrimitiveApes/issues?q=assignee%3Awrachel) | [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Awrachel) | [Commit Page](https://github.com/wrachel/PrimitiveApes/commits?author=wrachel) | [Profile](https://github.com/wrachel/PrimitiveApes/commits?author=wrachel) | [INDIVIDUAL Replit](https://replit.com/@RachelWei1/Data-Structures-Indiv#Main.java)| [Individual Repo](https://github.com/wrachel/tri3Individual) | [Individual Github Pages](https://wrachel.github.io/tri3Individual/) | 
 Harry Li (Deployment Manager) | wiz124 | [Issues](https://github.com/yajatyadav/intellijs/issues/assigned/macddmac) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Amacddmac) | [Commmits](https://github.com/yajatyadav/intellijs/commits?author=wiz124) | [Profile](https://github.com/wiz124) | [Repl](https://replit.com/@HarryLi11/individual#.replit) [jekyll](https://wiz124.github.io/individual/) |
 
-
+</details>
+  
 ## Ideation: Seater
 Our website is a seating chart generator, which will allow a user to input names of students from their class and will return a random seating chart of a defined table size. Users will be able to easily create random groups of a size of their choosing in a 9 X 9 grid,in addition to future features like being able to move people around and the ability to increase text and grid size for improved visablity. 
 
