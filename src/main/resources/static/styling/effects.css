@@ -6,3 +6,14 @@
     -webkit-filter: blur(8px);
 
 }
+#title{
+    overflow-y:hidden;
+    top:16%;
+    left:15%;
+    position:absolute;
+}
+.title{
+    font-family: Andale Mono, monospace;
+    font-size:50px;
+    font-weight: bold;
+}
