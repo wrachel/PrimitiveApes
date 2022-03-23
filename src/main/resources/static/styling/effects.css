@@ -2,7 +2,7 @@
     overflow-x:hidden;
 }
 .bigpic{
-    filter:blur(18px);
-    -webkit-filter: blur(18px);
+    filter:blur(8px);
+    -webkit-filter: blur(8px);
 
 }
