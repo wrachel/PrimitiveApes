@@ -6,7 +6,44 @@
     -webkit-filter: blur(8px);
 
 }
-
+.stylishbutton{
+    transition-duration: 0.3s;
+    border-radius:12px;
+    border:none;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 20px;
+    text-align: center
+}
+.stylishbutton span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+.stylishbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+.stylishbutton:hover span{
+    padding-right:25px;
+}
+.stylishbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#colorchange{
+    box-shadow: 5px 10px  5px rgba(0, 0, 0, 0.2),0px 1px  5px  rgba(0, 0, 0, 0.2);
+}
+#colorchange:hover{
+    background-color:Green;
+    color: #F5F5F5;
+    box-shadow: none;
+}
 .fade{
     animation: fadeIn 3s ;
     -webkit-animation: fadeIn 3s;
