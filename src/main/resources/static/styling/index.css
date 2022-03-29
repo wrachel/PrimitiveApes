@@ -93,3 +93,15 @@ h1.title{
 p.title{
     font-size:20px;
 }
+h1{
+    overflow-y:hidden;
+}
+sections{
+    position:relative;
+    font-family: Georgia, serif;
+    width:100%;
+}
+#section1 {
+    margin-top: 5%;
+    margin-left: 25%;
+}
