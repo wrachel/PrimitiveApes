@@ -100,7 +100,7 @@ h1{
     top:0;
     width:100%;
     border: 1px solid black;
-    padding-bottom:10%;
+    padding-bottom:5%;
 
 }
 .right{
@@ -123,6 +123,5 @@ h1{
 
 }
 .pos{
-    margin-right:20%;
     margin-left:20%;
 }
