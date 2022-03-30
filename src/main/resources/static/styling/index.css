@@ -104,19 +104,25 @@ h1{
 
 }
 .right{
-    width:50%;
-    padding-top:8%;
-    padding-left:10%;
-    border: 1px solid black;
+
+    margin-top:4%;
+    padding-top:4%;
+    margin-left:5%;
+    padding-left:5%;
+    margin-right:60%;
+    padding-bottom:4%;
+
+   border: 1px solid black;
 }
 .left{
     position:absolute;
     width:50%;
     top:0;
     right:0;
-    border: 1px solid black;
+    padding-top:10%;
+
 }
 .pos{
-position:relative;
-    margin:auto;
+    margin-right:20%;
+    margin-left:20%;
 }
