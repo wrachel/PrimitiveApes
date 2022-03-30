@@ -54,4 +54,13 @@ NOTE: Although this may be obvious, please do not push any broken code. Thanks.
   <p> Mr. Mortensen is my favorite teacher <p>
 </details>  
   
+  
+### Hosting plan:
+Short term and long term, we are using aws ec2 instance with cloudflare domain to deploy
+
+ec2 instance is free and we will be able to maintain the website for long period of time 
+
+cloudflare domain is also free
+
+we host pbl project on here in case it wasn't obvious already
 
