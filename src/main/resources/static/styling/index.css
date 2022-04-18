@@ -3,11 +3,13 @@
     font-family: Andale Mono, monospace;
 
 }
+/*big background picture*/
 .bigpic{
     filter:blur(8px);
     -webkit-filter: blur(8px);
 
 }
+/*fancy find out more button style*/
 .stylishbutton{
     transition-duration: 0.3s;
     border-radius:12px;
@@ -46,6 +48,8 @@
     color: #F5F5F5;
     box-shadow: none;
 }
+
+/*big text animation on the background pic*/
 .fade{
     animation: fadeIn 3s ;
     -webkit-animation: fadeIn 3s;
@@ -78,6 +82,7 @@
     0% {opacity:0;}
     100% {opacity:1;}
 }
+/*formatting the text on the background pic*/
 #title{
     overflow-y:hidden;
     top:16%;
@@ -95,33 +100,50 @@ p.title{
 h1{
     overflow-y:hidden;
 }
+
+/*partitioning off the different sections that will contain tidbits of texts and a pic*/
 .sections{
     position:relative;
     width:100%;
-    border: 1px solid black;
     padding-bottom:7%;
     overflow-y:hidden;
 
 }
+/*partitioning text within section*/
 .right{
 
-    margin-top:4%;
+    margin-top:6%;
     padding-top:4%;
     margin-left:5%;
     padding-left:5%;
     margin-right:60%;
     padding-bottom:4%;
 /* some cool border effects later*/
-   border: 1px solid black;
+  /* border: 1px solid black;*/
 }
+
+/*positioning pic within section*/
 .left{
     position:absolute;
-    width:50%;
     top:0;
     right:0;
     padding-top:2.5%;
 
 }
-.pos{
+.wide{
+    width:50%;
+}
+img.pos{
     margin-left:20%;
+    z-index:1;
+}
+/*positioning for second section*/
+#overlap{
+    z-index:-1;
+    margin-top:-3%;
+    background-color: lightgreen;
+}
+/*for the text on the second section*/
+#text{
+
 }

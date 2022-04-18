@@ -15,6 +15,7 @@
 
     <!--homepage image text stuff -->
 
+    <!--first thing to see-->
 <div   style="justify-content: center;position:relative;">
     <img class="bigpic" src="/static/images/classroom.jpg" th:src="@{/images/classroom.jpg}" width="100%">
     <div id="title" class="fade">
@@ -22,9 +23,9 @@
         <p class="title">Find out how we are easing the way<br> teachers teach through innovative programming</p>
         <button class = "stylishbutton" id="colorchange" onclick="window.location.href='#whoami'"><span>Find out more</span></button>
     </div>
-    <!-- End of body content specific to page  -->
 </div>
 
+    <!--random info about our group -->
 <div class = "sections" id="whoami">
 <div class="right">
     <h1>Who are we?</h1>
@@ -32,19 +33,24 @@
     future students</p>
     </div>
 
-<div class="left">
-    <img src="/static/images/pencils.png" th:src="@{/images/pencils.png}" width="52%" class="pos">
+    <!--image to accompany the text-->
+<div class="left wide">
+    <img src="/static/images/pencils.png" th:src="@{/images/pencils.png}" width="58%" class="pos">
     </div>
-
 </div>
 
-
-
-<!--
-    <div>
-<h1>Our purpose</h1>
+    <div class = "sections" id="overlap" >
+        <div>
+            <!-- image here-->
+        </div>
+        <div class="left" id="text">
+            <h1>Our purpose</h1>
+            <p>Our goal is to help Mr.Jenkins to ease his teaching duties<br>
+                while also wholly benefiting ourselves through
+                <br> the process of learning and getting that A+</p>
+        </div>
     </div>
-
+<!--
     <div>
 <h1>Our mission to help teachers</h1>
 </div>-->
