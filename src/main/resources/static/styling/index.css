@@ -147,7 +147,7 @@ img.pos{
 /*for the text on the second section*/
 #text{
     position:relative ;
-    margin-top:10% ;
+    margin-top:5% ;
     padding-right: 5%;
     padding-left: 5%;
     margin-right: 5%;
@@ -161,7 +161,7 @@ img.pos{
     top:0;
     left:0;
     padding-top:2.5%;
-    margin-top:8%;
+    margin-top:5%;
 }
 #pos2{
     margin-left:20%;
