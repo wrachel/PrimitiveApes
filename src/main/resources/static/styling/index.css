@@ -141,9 +141,29 @@ img.pos{
 #overlap{
     z-index:-1;
     margin-top:-3%;
-    background-color: lightgreen;
+    background-color: #3eb489;
+    filter: brightness(1.2);
 }
 /*for the text on the second section*/
 #text{
-
+    position:relative ;
+    margin-top:10% ;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 5%;
+    margin-left: 60%;
+    padding-top:5%;
+    padding-bottom:5%;
+    border: 20px solid white;
 }
+#section2img{
+    position:absolute;
+    top:0;
+    left:0;
+    padding-top:2.5%;
+    margin-top:8%;
+}
+#pos2{
+    margin-left:20%;
+}
+
