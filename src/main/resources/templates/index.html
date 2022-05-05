@@ -15,21 +15,53 @@
 
     <!--homepage image text stuff -->
 
+    <!--first thing to see-->
 <div   style="justify-content: center;position:relative;">
     <img class="bigpic" src="/static/images/classroom.jpg" th:src="@{/images/classroom.jpg}" width="100%">
     <div id="title" class="fade">
     <h1 class="title">PrimitiveApes'<br> Tools for Teachers</h1>
         <p class="title">Find out how we are easing the way<br> teachers teach through innovative programming</p>
-        <button class = "stylishbutton" id="colorchange"><span>some button here to some program</span></button>
-
-        <a href="path_to_file" download="proposed_file_name">Download</a>
+        <button class = "stylishbutton" id="colorchange" onclick="window.location.href='#whoami'"><span>Find out more</span></button>
     </div>
-    <!-- End of body content specific to page  -->
 </div>
-<div>
-<p>put something here, idk what</p>
 
+    <!--random info about our group
+    first section-->
+<div class = "sections" id="whoami">
+<div class="right" id="border">
+    <h1>Who Are We?</h1>
+    <p>We are an aspiring group of young students dedicated<br>to improving the learning environment of <br> fellow and
+    future students</p>
+    </div>
+    <!--image to accompany the text-->
+<div class="left wide" >
+    <img src="/static/images/pencils.png" th:src="@{/images/pencils.png}" width="58%" class="pos">
+    </div>
 </div>
+
+<!-- second section of information -->
+    <div class = "sections" id="overlap" >
+        <div id="section2img" class="wide">
+            <!-- image here-->
+            <img src="/static/images/teacher.jpg" th:src="@{/images/teacher.jpg}" width="60%" id="pos2">
+        </div>
+        <div id="text" >
+            <h1>Our Purpose</h1>
+            <p>Our goal is to help Mr.Jenkins to ease his teaching duties<br>
+                while also wholly benefiting ourselves through
+                <br> the process of learning and getting that A+</p>
+        </div>
+    </div>
+
+<!--thrid section-->
+
+    <div id="third"  >
+<h1>Our Bottom Line</h1>
+        <p class="effect">Help our mission by easing your teaching with our tools made to help teachers like you</p>
+        <br><a href="#" class="btn btn-primary" id="color">Go!</a>
+</div>
+
+
 </div>
 </body>
 

@@ -1,4 +1,5 @@
 package com.example.sping_portfolio.database;
+
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;
 import org.hibernate.dialect.function.StandardSQLFunction;
