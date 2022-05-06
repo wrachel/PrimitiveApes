@@ -17,6 +17,8 @@
 | Week 1 | Discussed Mr. Jenkin's problem and propose solution which Mr. Jenkins verified. Created idea page on git pages. Created technocal plan on git pages. Created hosting plan on git pages. Set up home page. |
 | Week 2 - 5 | Taking a break from PBL |
 
+### Our team members
+
 | Name                              | GitHub ID | Tasks | Scrum Board | Commits | Profile | Individual Repl.it | Individual Repo Page | Individual Git Pages |
 |-----------------------------------| --------- | ----- | ----------- | ------- | ------- | ------------------ | ---------------------- | -------------------- |
 | Devam Shrivastava (Design Manager) | devamshri | [Issues](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Adevamshri) | [Scrum Board](https://github.com/wrachel/PrimitiveApes/projects/2?card_filter_query=assignee%3Adevamshri) | [Commit Page](https://github.com/wrachel/PrimitiveApes/commits?author=devamshri)| [Profile](https://github.com/devamshri) | [Repl](https://replit.com/@D3vIs4G0d/Tri3DevamChallenges) | [Indvidual Repo](https://github.com/devamshri/Tri_3_Devam_Challenges/) | [INDIVIDUAL GITHUB PAGES](https://devamshri.github.io/Tri_3_Devam_Challenges/) |
