@@ -10,6 +10,7 @@
 ##### [Repo Contributors](https://github.com/wrachel/PrimitiveApes/graphs/contributors) 
   
 ### Timebox
+
 | Week   | Description                                                                                                                                                                                               |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Week 0 | Set up repo and created git pages. Assigned team roles set up homepage template for homepage                                                                                                              |
