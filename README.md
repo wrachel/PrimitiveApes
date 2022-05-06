@@ -18,6 +18,7 @@
 | Week 2 - 5 | Taking a break from PBL                                                                                                                                                                                   |
 | Week 6     | Planned outline. Added large image with impactful visuals. Added javascript funtionality to home page. Allocated space accordinly to relevante information that the user would need to know.              |
 | Week 7     | Bolstersted General asthetics of the website. Implemented intersting visual animations using CSS., Javascript and HTML in order to improve the genaeral feel of the website.                              |
+
 ### Our team members
 
 | Name                              | GitHub ID | Tasks | Scrum Board | Commits | Profile | Individual Repl.it | Individual Repo Page | Individual Git Pages |
