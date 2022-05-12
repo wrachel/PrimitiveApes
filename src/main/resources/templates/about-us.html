@@ -72,8 +72,29 @@
                 display: block;
             }
         }
+
+         .card {
+             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+             transition: 0.3s;
+             width: 40%;
+             border-radius: 5px;
+         }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
     </style>
 </head>
+
 <body>
 <div layout:fragment="content" th:remove="tag">
 <div class="about-section">
@@ -86,41 +107,59 @@
 
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
-    <div class="column">
+    <div class="col-sm-6">
         <div class="card">
-            <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                <img src="/images/Singapore_Skyline_2019-10.jpg" width="150">
             <div class="container">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>jane@example.com</p>
-                <p><button class="button">Contact</button></p>
+                <h2>Devam Shrivastava</h2>
+                <p class="title">Design Manager</p>
+                <a href=”https://github.com/devamshri”>Profile</a>
             </div>
         </div>
     </div>
 
-    <div class="column">
+    <div class="col-sm-6">
         <div class="card">
-            <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+            <img src="/images/download.jpg" width="150">
             <div class="container">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <p><button class="button">Contact</button></p>
+                <h2>Rachel Wei</h2>
+                <p class="title">Scrum Master</p>
+                <a href=”https://github.com/wrachel/PrimitiveApes/commits?author=wrachel”>Profile</a>
             </div>
         </div>
     </div>
 
-    <div class="column">
+    <div class="col-sm-6">
         <div class="card">
-            <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+            <img src="/images/waterfall.jpg" width="150">
             <div class="container">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>john@example.com</p>
-                <p><button class="button">Contact</button></p>
+                <h2>Harry Li</h2>
+                <p class="title">Deployment manager</p>
+                <a href=”https://github.com/wiz124”>Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+            <img src="/images/bG.jpg" width="150">
+            <div class="container">
+                <h2>Yajat Yadav</h2>
+                <p class="title">Technical Officer</p>
+                <a href=”https://github.com/yajatyadav”>Profile</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <img src="/images/1234093202.0.jpg" width="150">
+            <div class="container">
+                <h2>Calvin Cheah</h2>
+                <p class="title">Github Admin</p>
+                <a href=”https://github.com/QwikSP”>Profile</a>
             </div>
         </div>
     </div>
