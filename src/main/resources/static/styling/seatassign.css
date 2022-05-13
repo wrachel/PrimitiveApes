@@ -8,3 +8,14 @@
     text-align: center;
     margin-top:5%;
 }
+#input{
+    text-align:center;
+    margin-top:5%;
+    padding-top:3%;
+    height:auto;
+    width:18%;
+    position:relative;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}

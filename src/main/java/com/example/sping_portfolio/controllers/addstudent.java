@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class addstudent {
     @GetMapping("/createstudent")
-    public String create(@RequestParam(name="start", required=false, defaultValue="true") String start, Model model){
+    public String create(@RequestParam(name="student", required=false, defaultValue="john") String student,
+                         @RequestParam(name="period", required=false, defaultValue="1") String period,Model model)
+    {
         return "createstudent";
     }
 }
