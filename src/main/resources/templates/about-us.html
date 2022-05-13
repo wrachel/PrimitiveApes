@@ -13,16 +13,10 @@
             box-sizing: border-box;
         }
 
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
+        /**, *:before, *:after {*/
+        /*    box-sizing: inherit;*/
+        /*}*/
 
-        .column {
-            float: left;
-            width: 33.3%;
-            margin-bottom: 16px;
-            padding: 0 8px;
-        }
 
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -49,36 +43,18 @@
         .title {
             color: grey;
         }
+        /*@media screen and (max-width: 650px) {*/
+        /*    .column {*/
+        /*        width: 100%;*/
+        /*        display: block;*/
+        /*    }*/
+        /*}*/
 
-        .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .button:hover {
-            background-color: #555;
-        }
-
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
-
-         .card {
-             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-             transition: 0.3s;
-             width: 40%;
-             border-radius: 5px;
-         }
+         /*.card {*/
+         /*    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+         /*    transition: 0.3s;*/
+         /*    border-radius: 5px;*/
+         /*}*/
 
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -91,7 +67,9 @@
         .container {
             padding: 2px 16px;
         }
-
+        /*table, th, td {*/
+        /*    border:1px solid black;*/
+        /*}*/
     </style>
 </head>
 
@@ -106,8 +84,9 @@
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
-<div class="row">
-    <div class="col-sm-6">
+    <div class="row justify-content-md-center flex-container" style="padding:10px; width:1500px;" >
+        <table style="width:100%">
+        <td>
         <div class="card">
                 <img src="/images/Singapore_Skyline_2019-10.jpg" width="150">
             <div class="container">
@@ -116,9 +95,10 @@
                 <a href=”https://github.com/devamshri”>Profile</a>
             </div>
         </div>
-    </div>
+        </td>
 
-    <div class="col-sm-6">
+
+<td>
         <div class="card">
             <img src="/images/download.jpg" width="150">
             <div class="container">
@@ -127,9 +107,8 @@
                 <a href=”https://github.com/wrachel/PrimitiveApes/commits?author=wrachel”>Profile</a>
             </div>
         </div>
-    </div>
-
-    <div class="col-sm-6">
+</td>
+<td>
         <div class="card">
             <img src="/images/waterfall.jpg" width="150">
             <div class="container">
@@ -138,9 +117,8 @@
                 <a href=”https://github.com/wiz124”>Profile</a>
             </div>
         </div>
-    </div>
-
-    <div class="col-sm-6">
+</td>
+            <td>
         <div class="card">
             <div class="card-body">
             <img src="/images/bG.jpg" width="150">
@@ -151,9 +129,8 @@
             </div>
             </div>
         </div>
-    </div>
-
-    <div class="col-sm-6">
+            </td>
+            <td>
         <div class="card">
             <img src="/images/1234093202.0.jpg" width="150">
             <div class="container">
@@ -162,7 +139,8 @@
                 <a href=”https://github.com/QwikSP”>Profile</a>
             </div>
         </div>
-    </div>
+            </td>
+        </table>
 </div>
 </div>
 </body>
