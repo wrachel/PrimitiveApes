@@ -1,0 +1,39 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head><div layout:fragment="metadata" th:remove="tag">
+    <title>Main Page</title>
+</div></head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body>
+<div layout:fragment="content" th:remove="tag">
+
+
+
+
+    <div id="input">
+        <h1>Add a Student</h1>
+    <form action="/createstudent" method="POST">
+        <div class="form-group" >
+        <label for="student">Student Name: </label>
+        <input type="text" id="student" name="student">
+    </div>
+        <div class="form-group">
+        <label for="period">Class period: </label>
+        <input type="number" id="period" name="period"> <!--input type can be changed if necessary-->
+        <br>
+            <div style="margin-top:3%; margin-right:auto; margin-left:auto;">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+</div>
+</body>
+</html>

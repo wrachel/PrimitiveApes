@@ -10,33 +10,27 @@
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body>
 <div layout:fragment="content" th:remove="tag">
-
+<!--
     <div class="container">
 
         <div class="row justify-content-md-center">
             <h1>Random seat assign</h1>
         </div>
         <div class="row justify-content-md-center">
-            <a th:href="@{/database/personcreate/}">Enter student name</a>
+            <a th:href="#">Enter student name</a>
         </div>
 
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>ID</th>
-                <th>EMail</th>
-                <th>Person</th>
-                <th>Age</th>
-                <th>Action</th>
+                <th>Student</th>
+                <th>Period</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="person : ${list}">
-                <td th:text="${person.id}">Person ID</td>
-                <td th:text="${person.email}">Birth Date</td>
-                <td th:text="${person.name}">Name</td>
-                <td th:if="${person.getAge() != -1}" th:text="${person.getAge()}">Age</td>
-                <td th:unless="${person.getAge() != -1}" th:text="Unknown">Unknown Age</td>
+                <td th:text="${person.id}">Student</td>
+                <td th:text="${person.email}">Period</td>
                 <td>
                     <a th:href="@{/database/personupdate/{id}(id = ${person.id})}">Update</a>
                     <a th:href="@{/database/persondelete/{id}(id = ${person.id})}">Delete</a>
@@ -44,6 +38,45 @@
             </tr>
             </tbody>
         </table>
+
+
+        <button>Randomize!</button>
+    </div>-->
+    <div style="width:100%;text-align: center;" id="seattitle">
+         <h1>Random Seating Chart</h1>
+    </div>
+    <div id="dynamictable">
+        <table class="table table-bordered">
+         <thead>
+            <tr>
+                <td>Student</td>
+                <td>Period</td>
+            </tr>
+         </thead>
+         <tbody>
+         <tr>
+             <td>
+                 <p>In progress</p> <!--refer to table syntax above when db complete-->
+             </td>
+             <td>
+                 <p>In progress</p>
+             </td>
+         </tr>
+         </tbody>
+        </table>
+
+        <a href="/createstudent">Add Student</a>
+
+        <div>
+        <form action="/seatassign" method="GET" > <!--might have to change GET to POST if necessary-->
+            <input id="start" name="start" type="submit" value="Randomize!" class="btn btn-primary">
+        </form>
+        </div>
+
+        <!--resources that might help create the tiles-->
+        <!--https://www.w3schools.com/howto/howto_js_draggable.asp,
+        https://web.dev/drag-and-drop/?gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5jWJv1jV2WHzyBV-8n_1z4D2zgEnpMhb3jfp1XNtzL_X8vFaxX_T2AaAlEqEALw_wcB-->
+        <!--https://stackoverflow.com/questions/65690569/multiple-draggable-elements-->
 
     </div>
 </div>
