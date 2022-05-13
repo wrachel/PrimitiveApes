@@ -26,9 +26,9 @@ public class StudentSQL {
     }
 
     // custom query to find anything containing term in name or email ignoring case
-    public  List<Student>listLike(String term) {
-        return jpa.findByNameContainingIgnoreCaseOrEmailContainingIgnoreCase(term, term);
-    }
+//    public  List<Student>listLike(String term) {
+//        return jpa.findByNameContainingIgnoreCaseOrEmailContainingIgnoreCase(term, term);
+//    }
 
     // custom query to find anything containing term in name or email ignoring case
     public  List<Student>listLikeNative(String term) {

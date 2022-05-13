@@ -27,10 +27,11 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @NotEmpty
-    @Size(min=5)
-    @Email
-    private String email;
+    @Column( name = "table_number")
+    private int table_number;
+
+    @Column (name = "period")
+    private int period;
 
     /*
     @NonNull: Places this in @RequiredArgsConstructor
@@ -38,24 +39,19 @@ public class Student {
      */
     @NonNull
     @Size(min = 2, max = 30, message = "Name (2 to 30 chars)")
+    @Column (name = "name")
     private String name;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date dob;
+
 
     /* Initializer used when setting database from an API */
-    public Student(String email, String name, Date dob) {
-        this.email = email;
+    public Student(String name, int table_number, int period_number) {
+        this.table_number = table_number;
         this.name = name;
-        this.dob = dob;
+        this.period = period_number;
     }
 
     /* A custom getter to return age from dob calculation */
-    public int getAge() {
-        if (this.dob != null) {
-            LocalDate birthDay = this.dob.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-            return Period.between(birthDay, LocalDate.now()).getYears(); }
-        return -1;
-    }
+
 
 }

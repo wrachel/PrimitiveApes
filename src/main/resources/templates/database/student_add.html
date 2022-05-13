@@ -1,0 +1,54 @@
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<!-- <head> -->
+<div layout:fragment="head" th:remove="tag">
+    <title>Add Student</title>
+</div>
+
+<!-- <body> -->
+<div layout:fragment="body" th:remove="tag">
+    <!-- Page specific body additions -->
+    <div class="container">
+
+        <div class="row justify-content-md-center">
+            <h2>Student Details</h2>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col8">
+                <div class="jumbotron">
+                    <h3>Add Student</h3>
+                    <!--form-->
+                    <form class="form-inline" action="#" th:action="@{/database/student_add}" th:object="${student}" method="POST">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <label for="name">Name:</label>
+                            <input type="text" th:field="*{name}" id="name">
+                            <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</small>
+                        </div>
+                        <div class="input-group mb-2 mr-sm-2">
+                            <label for="table_number">Table Number</label>
+                            <input type="number" th:field="*{table_number}" id="table_number">
+                            <small th:if="${#fields.hasErrors('table_number')}" th:errors="*{table_number}">Deadline Error</small>
+                        </div>
+
+                        <div class="input-group mb-2 mr-sm-2">
+                            <label for="period">Period</label>
+                            <input type="number" th:field="*{period}" id="period">
+                            <small th:if="${#fields.hasErrors('period')}" th:errors="*{period}">Period Error</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</html>
