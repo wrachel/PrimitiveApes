@@ -20,7 +20,7 @@ public class seatstudents {
                 if (studentList.length > 0) {
                     int randomValueInArray = (int) (Math.random() * (studentList.length));
                     studentGroups[i][j] = studentList[randomValueInArray];
-                    studentList.remove(randomValueInArray);
+//                    studentList.remove(randomValueInArray);
                 }
                 else {
                     studentGroups[i][j] = null;
