@@ -47,17 +47,32 @@
     </div>
     <div id="dynamictable">
         <table class="table table-bordered">
+         <thead>
             <tr>
                 <td>Student</td>
                 <td>Period</td>
             </tr>
+         </thead>
+         <tbody>
+         <tr>
+             <td>
+                 <p>In progress</p> <!--refer to table syntax above when db complete-->
+             </td>
+             <td>
+                 <p>In progress</p>
+             </td>
+         </tr>
+         </tbody>
         </table>
-        <a href="#">Add Student</a>
+
+        <a href="/createstudent">Add Student</a>
+
         <div>
-        <form action="/seatassign" method="GET" >
-            <input id="start" name="start" type="submit" value="Randomize!">
+        <form action="/seatassign" method="GET" > <!--might have to change GET to POST if necessary-->
+            <input id="start" name="start" type="submit" value="Randomize!" class="btn btn-primary">
         </form>
         </div>
+
     </div>
 </div>
 </body>
