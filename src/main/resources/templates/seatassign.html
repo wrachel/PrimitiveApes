@@ -23,13 +23,13 @@
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>Student</th>
+                <th>com.example.sping_portfolio.Student</th>
                 <th>Period</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="person : ${list}">
-                <td th:text="${person.id}">Student</td>
+                <td th:text="${person.id}">com.example.sping_portfolio.Student</td>
                 <td th:text="${person.email}">Period</td>
                 <td>
                     <a th:href="@{/database/personupdate/{id}(id = ${person.id})}">Update</a>
@@ -49,7 +49,7 @@
         <table class="table table-bordered">
          <thead>
             <tr>
-                <td>Student</td>
+                <td>com.example.sping_portfolio.Student</td>
                 <td>Period</td>
             </tr>
          </thead>
@@ -65,7 +65,7 @@
          </tbody>
         </table>
 
-        <a href="/createstudent">Add Student</a>
+        <a href="/createstudent">Add com.example.sping_portfolio.Student</a>
 
         <div>
         <form action="/seatassign" method="GET" > <!--might have to change GET to POST if necessary-->

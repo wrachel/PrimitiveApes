@@ -1,3 +1,5 @@
+package com.example.sping_portfolio;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -19,6 +21,13 @@ public class seater {
         //break string of students names
         String[] split = students.split(",");
         this.names = new ArrayList<String>(Arrays.asList(split));
+    }
+    public seater(String students, int numTables, int studentsPerTable){
+        String[] split = students.split(",");
+        this.names = new ArrayList<String>(Arrays.asList(split));
+        this.numStudents = names.size();
+        this.numTables=numTables;
+        this.studentsPerTable=studentsPerTable;
     }
 
     public seater(int numTables, int numStudents, String students) {
@@ -60,28 +69,6 @@ public class seater {
         }
     }
 }
-    class Student{
-        private int tableGroup;
-        private String studentName;
-
-        public Student(int a, String str){
-            this.studentName = str;
-            this.tableGroup = a;
-        }
-
-        public String getStudentName(){
-            return studentName;
-        }
-        public int getTableGroup(){
-            return tableGroup;
-        }
-        public void setStudentName(String s){
-            studentName = s;
-        }
-        public void setTableGroup(int a){
-            tableGroup = a;
-        }
-    }
 
 
 

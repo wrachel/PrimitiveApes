@@ -1,5 +1,5 @@
 package com.example.sping_portfolio.database;
-import com.example.sping_portfolio.database.Student;
+import com.example.sping_portfolio.database.com.example.sping_portfolio.Student;
 import com.example.sping_portfolio.database.StudentSQL;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class studentcontrol {
 
     @GetMapping("/database/person")
     public String person(Model model) {
-        List<Student> list = repository.listAll();
+        List<com.example.sping_portfolio.Student> list = repository.listAll();
         model.addAttribute("list", list);
         return "database/person";
     }
@@ -31,7 +31,7 @@ public class studentcontrol {
         @param - Person Class
     */
     @GetMapping("/database/personcreate")
-    public String personAdd(Student person) {
+    public String personAdd(com.example.sping_portfolio.Student person) {
         return "database/personcreate";
     }
 
@@ -40,7 +40,7 @@ public class studentcontrol {
     @param - BindingResult object
      */
     @PostMapping("/database/personcreate")
-    public String personSave(@Valid Student person, BindingResult bindingResult) {
+    public String personSave(@Valid com.example.sping_portfolio.Student person, BindingResult bindingResult) {
         // Validation of Decorated PersonForm attributes
         if (bindingResult.hasErrors()) {
             return "database/personcreate";
@@ -57,7 +57,7 @@ public class studentcontrol {
     }
 
     @PostMapping("/database/personupdate")
-    public String personUpdateSave(@Valid Student person, BindingResult bindingResult) {
+    public String personUpdateSave(@Valid com.example.sping_portfolio.Student person, BindingResult bindingResult) {
         // Validation of Decorated PersonForm attributes
         if (bindingResult.hasErrors()) {
             return "database/personupdate";
@@ -82,7 +82,7 @@ public class studentcontrol {
     GET List of People
      */
     @RequestMapping(value = "/api/people/get")
-    public ResponseEntity<List<Student>> getPeople() {
+    public ResponseEntity<List<com.example.sping_portfolio.Student>> getPeople() {
         return new ResponseEntity<>( repository.listAll(), HttpStatus.OK);
     }
 
@@ -90,7 +90,7 @@ public class studentcontrol {
     GET individual Person using ID
      */
     @RequestMapping(value = "/api/person/get/{id}")
-    public ResponseEntity<Student> getPerson(@PathVariable long id) {
+    public ResponseEntity<com.example.sping_portfolio.Student> getPerson(@PathVariable long id) {
         return new ResponseEntity<>( repository.get(id), HttpStatus.OK);
     }
 
@@ -118,7 +118,7 @@ public class studentcontrol {
             return new ResponseEntity<>(dobString +" error; try MM-dd-yyyy", HttpStatus.BAD_REQUEST);
         }
         // A person object WITHOUT ID will create a new record
-        Student person = new Student(email, name, dob);
+        com.example.sping_portfolio.Student person = new com.example.sping_portfolio.Student(email, name, dob);
         repository.save(person);
         return new ResponseEntity<>(email +" is created successfully", HttpStatus.CREATED);
     }
@@ -139,7 +139,7 @@ public class studentcontrol {
         String term = (String) json.get("term");
 
         // custom JPA query to filter on term
-        List<Student> list = repository.listLikeNative(term);
+        List<com.example.sping_portfolio.Student> list = repository.listLikeNative(term);
 
         // return resulting list and status, error checking should be added
         return new ResponseEntity<>(list, HttpStatus.OK);
