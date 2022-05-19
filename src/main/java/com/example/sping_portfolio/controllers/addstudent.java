@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
 import java.util.ArrayList;
 
 @Controller
@@ -27,8 +28,26 @@ public class addstudent {
 
         seater randomSeat = new seater(numTables, numStudents, studentsPerTable, allnames);
         ArrayList<Student> newGroups = randomSeat.randomize();
-
-        model.addAttribute("groups", newGroups);
+        ArrayList<String> tables = new ArrayList<>();
+        String table = "";
+        int counter = 0;
+        for(Student a : newGroups){
+            if (counter < 3){
+                table = table + a.getStudentName() + ' ';
+                counter ++;
+                System.out.println(counter);
+            }
+            else{
+                tables.add(table);
+                table = "";
+                table = table + a.getStudentName() + ' ';
+                counter = 0;
+            }
+        }
+        for(String a : tables){
+           System.out.println(a);
+        }
+        model.addAttribute("tables", tables);
 
         return "randomizeForm";
     }

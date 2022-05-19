@@ -39,6 +39,10 @@ public class seater {
         this.names = new ArrayList<String>(Arrays.asList(split));
     }
 
+    public ArrayList<String> getNames(){
+        return names;
+    }
+
     public ArrayList<Student> randomize() {
         ArrayList<Student> groups = new ArrayList<Student>();
 

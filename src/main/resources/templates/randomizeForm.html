@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>title!</title>
-</head>
-<body>
+    <div layout:fragment="metadata" th:remove="tag">
 
+    <title>title!</title>
+    </div>
+</head>
+
+
+<body>
+<div layout:fragment="content" th:remove="tag">
 <form action="/test">
     <label for="allnames">Names of Students in period: </label>
     <input type="text" id="allnames" name="allnames"><br>
@@ -19,9 +24,13 @@
     <input type="submit" value="Submit">
 </form>
 
-<table>
+    <div class="row justify-content-md-center flex-container" style="padding:10px; width:1000px;" >
+        <table class="table">
+            <tr th:each="value: ${tables}">
 
-</table>
+            </tr>
+        </table>
+    </div>
 
 <script type="text/javascript">
     var array = [[${groups}]];
@@ -33,5 +42,6 @@
 </script>
 
 
+</div>
 </body>
 </html>
