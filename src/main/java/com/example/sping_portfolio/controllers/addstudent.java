@@ -41,9 +41,10 @@ public class addstudent {
                 tables.add(table);
                 table = "";
                 table = table + a.getStudentName() + ' ';
-                counter = 0;
+                counter = 1;
             }
         }
+        tables.add(table);
         for(String a : tables){
            System.out.println(a);
         }
