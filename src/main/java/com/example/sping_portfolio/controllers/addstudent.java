@@ -29,8 +29,9 @@ public class addstudent {
         seater randomSeat = new seater(numTables, numStudents, studentsPerTable, allnames);
         ArrayList<Student> newGroups = randomSeat.randomize();
         ArrayList<String> tables = new ArrayList<>();
-        String table = "";
+        String table = "Table 1: ";
         int counter = 0;
+        int tableNumb = 1;
         for(Student a : newGroups){
             if (counter < 3){
                 table = table + a.getStudentName() + ' ';
@@ -38,8 +39,9 @@ public class addstudent {
                 System.out.println(counter);
             }
             else{
+                tableNumb ++;
                 tables.add(table);
-                table = "";
+                table = "Table " + tableNumb + ": ";
                 table = table + a.getStudentName() + ' ';
                 counter = 1;
             }
