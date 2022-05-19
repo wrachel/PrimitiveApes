@@ -34,7 +34,7 @@ public class addstudent {
         int tableNumb = 1;
         for(Student a : newGroups){
             if (counter < 3){
-                table = table + a.getStudentName() + ' ';
+                table = table + a.getStudentName() + " ";
                 counter ++;
                 System.out.println(counter);
             }
@@ -42,7 +42,7 @@ public class addstudent {
                 tableNumb ++;
                 tables.add(table);
                 table = "Table " + tableNumb + ": ";
-                table = table + a.getStudentName() + ' ';
+                table = table + a.getStudentName() + " ";
                 counter = 1;
             }
         }
