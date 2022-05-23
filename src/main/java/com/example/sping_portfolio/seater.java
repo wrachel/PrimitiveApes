@@ -22,6 +22,7 @@ public class seater {
         String[] split = students.split(",");
         this.names = new ArrayList<String>(Arrays.asList(split));
     }
+
     public seater(String students, int numTables, int studentsPerTable){
         String[] split = students.split(",");
         this.names = new ArrayList<String>(Arrays.asList(split));
