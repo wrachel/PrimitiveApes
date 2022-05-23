@@ -14,6 +14,7 @@ public class seater {
     private int numStudents;
     private int studentsPerTable;
 
+
     public seater(int numTables, int numStudents, int studentsPerTable, String students) {
         this.numTables = numTables;
         this.numStudents = numStudents;
@@ -39,12 +40,20 @@ public class seater {
         this.names = new ArrayList<String>(Arrays.asList(split));
     }
 
+    public seater(int numTables, String students){
+        this.numTables = numTables;
+        String[] split = students.split(",");
+        this.names = new ArrayList<String>(Arrays.asList(split));
+        this.numStudents = names.size();
+    }
+
     public ArrayList<String> getNames(){
         return names;
     }
 
     public ArrayList<Student> randomize() {
         ArrayList<Student> groups = new ArrayList<Student>();
+        studentsPerTable = numStudents / numTables;
 
         for (int i = 0; i < numTables; i++) {
             for (int j = 0; j < studentsPerTable; j++) {
@@ -54,11 +63,21 @@ public class seater {
                 names.remove(index);
             }
         }
+
+        int i = 0;
+            while(names.size() > 0 && i < numTables){
+                int index = (int) (Math.random() * names.size());
+                Student oneStudent = new Student(i, names.get(index));
+                groups.add(oneStudent);
+                names.remove(index);
+                i++;
+            }
+
         return groups;
     }
     //tester method
     public static void main(String args[]){
-        seater test = new seater(5, 10, 2, "Harry, Rachel, Calvin, Devam, Yajat, Harry2, Rachel2, Calvin2, Devam2, Yajat2");
+        seater test = new seater(2, "Harry, Rachel, Calvin, Devam, Yajat, Harry2, Rachel2, Calvin2, Devam2, Yajat2, Harry3, Rachel3, Calvin3");
 
         System.out.print("All student names: ");
         for(String a : test.names){
