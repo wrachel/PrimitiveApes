@@ -16,20 +16,20 @@
 
 
     <div id="input">
-        <h1>Add a com.example.sping_portfolio.Student</h1>
+        <h1>Add a class</h1>
     <form action="/createstudent" method="POST">
-        <div class="form-group" >
-        <label for="student">com.example.sping_portfolio.Student Name: </label>
-        <input type="text" id="student" name="student">
-    </div>
         <div class="form-group">
         <label for="period">Class period: </label>
         <input type="number" id="period" name="period"> <!--input type can be changed if necessary-->
-        <br>
+        </div>
+        <div class="form-group" >
+            <label for="student">Student Names: </label>
+            <textarea type="text" id="student" name="student" style="height:120px; width:200px;"></textarea>
+        </div>
             <div style="margin-top:3%; margin-right:auto; margin-left:auto;">
                 <button type="submit" class="btn btn-primary">Add</button>
             </div>
-        </div>
+
     </form>
 </div>
 
