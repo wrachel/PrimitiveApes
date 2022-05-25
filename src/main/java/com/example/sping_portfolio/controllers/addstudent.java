@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 
+import static com.example.sping_portfolio.seater.sort;
+
 @Controller
 public class addstudent {
     @GetMapping("/createstudent")
@@ -22,12 +24,11 @@ public class addstudent {
 
     @GetMapping("/test")
     public String test(@RequestParam(name="allnames", required=true, defaultValue="Harry, Rachel, Calvin, Yajat, Devam")String allnames,
-                       @RequestParam(name="numStudents", required=false, defaultValue="0")int numStudents,
-                       @RequestParam(name="numTables", required=true, defaultValue="0")int numTables,
-                       @RequestParam(name="studentsPerTable", required=true, defaultValue="3")int studentsPerTable, Model model){
+                       @RequestParam(name="numTables", required=true, defaultValue="1")int numTables, Model model){
 
-        seater randomSeat = new seater(numTables, numStudents, studentsPerTable, allnames);
+        seater randomSeat = new seater(numTables, allnames);
         ArrayList<Student> newGroups = randomSeat.randomize();
+        sort(newGroups);
         ArrayList<String> tables = new ArrayList<>();
         String table = "Table 1: ";
         int counter = 0;
