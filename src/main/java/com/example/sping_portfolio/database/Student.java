@@ -9,7 +9,10 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.ZoneId;
 import java.util.Date;
+import java.util.*;
 
+import static javax.persistence.FetchType.EAGER;
+import static javax.persistence.FetchType.LAZY;
 
 @Setter
 @Getter
@@ -23,6 +26,18 @@ public class Student {
     private Long id;
 
 
+    @NotEmpty
+    @Size(min=5)
+    @Column(unique=true)
+    @Email
+    private String email;
+
+    @NotEmpty
+    private String password;
+
+    // roles are stored in a "related" table
+    @ManyToMany(fetch = EAGER)
+    private Collection<Role> roles = new ArrayList<>();
 
     @NonNull
     @Size(min = 1, message = "Name")
