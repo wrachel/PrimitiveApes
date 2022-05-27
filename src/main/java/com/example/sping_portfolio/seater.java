@@ -97,7 +97,7 @@ public class seater {
 
     //tester method
     public static void main(String args[]){
-        seater test = new seater(4, "Harry, Rachel, Calvin, Devam, Yajat, Harry2, Rachel2, Calvin2, Devam2, Yajat2, Harry3, Rachel3, Calvin3");
+        seater test = new seater(2, "Harry, Rachel, Calvin, Devam, Yajat, Harry2, Rachel2, Calvin2, Devam2, Yajat2, Harry3, Rachel3, Calvin3");
 
         System.out.print("All student names: ");
         for(String a : test.names){
