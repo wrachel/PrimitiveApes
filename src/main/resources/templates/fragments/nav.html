@@ -27,31 +27,17 @@
                     <a class="nav-link" href="/about-us">About Us   <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <!-- Clock display -->
-<!--            <div>-->
-<!--                <span id="clock"></span>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Dark mode action &ndash;&gt;-->
-<!--            <div class="custom-control custom-switch">-->
-<!--                <input type="checkbox" onclick="darkFunction()" class="custom-control-input" id="darkSwitch">-->
-<!--                <label class="custom-control-label" for="darkSwitch"></label>-->
-<!--            </div>-->
-            <!-- Navigation bar JavaScript support -->
-            <script>
-                // Dark Mode Toggle
-                function darkFunction() {
-                    let element = document.body;
-                    element.classList.toggle("dark-mode");
-                }
-                // Clock controller
-                let clockElement = document.getElementById('clock');
-                function clock() {
-                    let date = new Date();
-                    clockElement.textContent = date.toLocaleString();
-                }
-                // Clock refresh frequency
-                setInterval(clock, 1000);
-            </script>
+            <th:block sec:authorize="isAnonymous()">
+                <div class="px-3">
+                    <a th:href='@{/login}' class="link-dark">Login</a>
+                </div>
+            </th:block>
+            <th:block sec:authorize="isAuthenticated()">
+                <div class="px-3">
+                    <a th:href='@{/logout}' class="link-dark">Logout</a>
+                </div>
+            </th:block>
+
         </div>
     </nav>
     <!-- Begin navigation fragments -->
