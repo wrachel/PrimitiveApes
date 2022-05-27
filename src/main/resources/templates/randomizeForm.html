@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout}" lang="en">
-<head>
-    <div layout:fragment="metadata" th:remove="tag">
+<!--<head>-->
+<!--    <div layout:fragment="metadata" th:remove="tag">-->
 
-    <title>title!</title>
-    </div>
-</head>
+<!--    <title>title!</title>-->
+<!--    </div>-->
+<!--</head>-->
 
 
 <body>
@@ -27,65 +27,66 @@
     <div class="row justify-content-md-center flex-container" style="padding:10px; width:1000px;" >
         <table class="table">
 <!--            <tr th:each="value: ${tables}"></tr>-->
-                <p th:text="${tables}"></p>
+            <p th:text="${tables}"></p>
+            <div class="cards">
+
+                <div class="card">
+                    <h5><a href="#0">Group 1</a></h5>
+                    <p>Students in group</p>
+                </div>
+                <div class="card">
+                    <h5><a href="#0">Group 2</a></h5>
+                    <p>Students in group</p>
+                </div>
+                <div class="card">
+                    <h5><a href="#0">Group 3</a></h5>
+                    <p>Students in group</p>
+                </div>
+                <div class="card">
+                    <h5><a href="#0">Group 4</a></h5>
+                    <p>Students in group</p>
+                </div>
+                <div class="card">
+                    <h5><a href="#0">Group 5</a></h5>
+                    <p>Students in group</p>
+                </div>
+            </div>
+            <style>
+                /*body {*/
+                /*    height: 100vh;*/
+                /*    margin: 0;*/
+                /*    display: grid;*/
+                /*    place-items: center;*/
+                /*    overflow: hidden;*/
+                /*}*/
+
+                .cards {
+                    display: flex;
+
+                    --distance: -4rem;
+                }
+                .card {
+                    background: deepskyblue;
+                    border-radius: 1rem;
+                    padding: 2rem;
+                    box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+                    transition: 0.2s;
+                &:not(:first-child) {
+                     margin-left: var(--distance);
+                 }
+                }
+
+                .card:hover,
+                .card:focus-within {
+                    transform: translateY(-1rem);
+                }
+                .card:hover ~ .card,
+                .card:focus-within ~ .card {
+                    transform: translateX(calc(var(--distance) * -1));
+                }
+            </style>
         </table>
-        <div class="cards">
 
-            <div class="card">
-                <h5><a href="#0">Group 1</a></h5>
-                <p>Students in group</p>
-            </div>
-            <div class="card">
-                <h5><a href="#0">Group 2</a></h5>
-                <p>Students in group</p>
-            </div>
-            <div class="card">
-                <h5><a href="#0">Group 3</a></h5>
-                <p>Students in group</p>
-            </div>
-            <div class="card">
-                <h5><a href="#0">Group 4</a></h5>
-                <p>Students in group</p>
-            </div>
-            <div class="card">
-                <h5><a href="#0">Group 5</a></h5>
-                <p>Students in group</p>
-            </div>
-        </div>
-        <style>
-            /*body {*/
-            /*    height: 100vh;*/
-            /*    margin: 0;*/
-            /*    display: grid;*/
-            /*    place-items: center;*/
-            /*    overflow: hidden;*/
-            /*}*/
-
-            .cards {
-                display: flex;
-
-                --distance: -4rem;
-            }
-            .card {
-                background: deepskyblue;
-                border-radius: 1rem;
-                padding: 2rem;
-                box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
-                transition: 0.2s;
-            &:not(:first-child) {
-                 margin-left: var(--distance);
-             }
-            }
-
-            .card:hover,
-            .card:focus-within {
-                transform: translateY(-1rem);
-            }
-            .card:hover ~ .card,
-            .card:focus-within ~ .card {
-                transform: translateX(calc(var(--distance) * -1));
-            }
-        </style>
     </div>
 
 <!--<script type="text/javascript">-->
