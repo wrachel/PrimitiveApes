@@ -17,7 +17,7 @@
         <java.version>11</java.version>
         <!-- Thymeleaf 3 -->
         <org.thymeleaf-version>3.0.12.RELEASE</org.thymeleaf-version>
-        <org.thymeleaf.extras.springsecurity4-version>3.0.2.RELEASE</org.thymeleaf.extras.springsecurity4-version>
+<!--        <org.thymeleaf.extras.springsecurity4-version>3.0.2.RELEASE</org.thymeleaf.extras.springsecurity4-version>-->
         <nz.net.ultraq.thymeleaflayout-version>2.3.0</nz.net.ultraq.thymeleaflayout-version>
         <thymeleaf-extras-java8time-version>3.0.1.RELEASE</thymeleaf-extras-java8time-version>
     </properties>
@@ -71,12 +71,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>org.thymeleaf.extras</groupId>
-            <artifactId>thymeleaf-extras-springsecurity4</artifactId>
-            <!-- TODO Remove version once available in platform BOM -->
-            <version>${org.thymeleaf.extras.springsecurity4-version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.thymeleaf.extras</groupId>-->
+<!--            <artifactId>thymeleaf-extras-springsecurity4</artifactId>-->
+<!--            &lt;!&ndash; TODO Remove version once available in platform BOM &ndash;&gt;-->
+<!--            <version>${org.thymeleaf.extras.springsecurity4-version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
@@ -125,10 +125,10 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>

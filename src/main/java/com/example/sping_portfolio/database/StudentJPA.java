@@ -12,20 +12,10 @@ Extends the JpaRepository interface from Spring Data JPA.
 -- Via JPA the developer can retrieve database from relational databases to Java objects and vice versa.
  */
 public interface StudentJPA extends JpaRepository<Student, Long> {
-    Student findByEmail(String email);
-
-    List<Student> findAllByOrderByNameAsc();
-
-    // JPA query, findBy does JPA magic with "Name", "Containing", "Or", "Email", "IgnoreCase"
-    List<Student> findByNameContainingIgnoreCaseOrEmailContainingIgnoreCase(String name, String email);
-    /* Custom JPA query articles, there are articles that show custom SQL as well
-       https://springframework.guru/spring-data-jpa-query/
-       https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods
-     */
 
     // Custom JPA query
     @Query(
-            value = "SELECT * FROM Student p WHERE p.name LIKE ?1 or p.email LIKE ?1",
+            value = "SELECT * FROM Student p WHERE p.name LIKE ?1",
             nativeQuery = true)
     List<Student> findByLikeTermNative(String term);
     /*
