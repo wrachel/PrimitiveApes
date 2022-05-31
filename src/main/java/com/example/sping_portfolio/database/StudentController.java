@@ -1,5 +1,5 @@
 package com.example.sping_portfolio.database;
-import com.example.sping_portfolio.database.StudentSQL;
+//import com.example.sping_portfolio.database.StudentSQL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,18 +14,7 @@ public class StudentController implements WebMvcConfigurer {
 
     // Autowired enables Control to connect HTML and POJO Object to Database easily for CRUD
     @Autowired
-    private StudentSQL repository;
-
-    @GetMapping(value="/database/college_faq")
-    public String college_faq(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        // @RequestParam handles required and default values, name and model are class variables, model looking like JSON
-        model.addAttribute("name", name); // MODEL is passed to html
-        return "/database/college_faq";
-    }
-
-
-
-
+    private ModelRepository repository;
 
 
     @GetMapping(value = "/database/student_list")

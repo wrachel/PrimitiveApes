@@ -26,18 +26,18 @@ public class Student {
     private Long id;
 
 
-    @NotEmpty
-    @Size(min=5)
-    @Column(unique=true)
-    @Email
-    private String email;
-
-    @NotEmpty
-    private String password;
-
-    // roles are stored in a "related" table
-    @ManyToMany(fetch = EAGER)
-    private Collection<Role> roles = new ArrayList<>();
+//    @NotEmpty
+//    @Size(min=5)
+//    @Column(unique=true)
+//    @Email
+//    private String email;
+//
+//    @NotEmpty
+//    private String password;
+//
+//    // roles are stored in a "related" table
+//    @ManyToMany(fetch = EAGER)
+//    private Collection<Role> roles = new ArrayList<>();
 
     @NonNull
     @Size(min = 1, message = "Name")
