@@ -19,3 +19,8 @@
     margin-right:auto;
     margin-left:auto;
 }
+#text{
+    position:relative;
+    margin-left:0;
+    width:100%;
+}

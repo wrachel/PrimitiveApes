@@ -16,18 +16,19 @@
 
 
     <div id="input">
-        <h1>Add a class</h1>
+        <h1>Add a Student</h1>
     <form action="#" th:action="@{/createstudent}" th:object="${student}" method="POST">
         <div class="form-group" >
             <label for="name">Name:</label>
             <input type="text" th:field="*{name}" id="name">
             <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</small>
         </div>
+       <!--
         <div class="input-group mb-2 mr-sm-2">
             <label for="table_number">Table Number</label>
             <input type="number" th:field="*{table_number}" id="table_number">
             <small th:if="${#fields.hasErrors('table_number')}" th:errors="*{table_number}">Table Error</small>
-        </div>
+        </div> -->
         <div class="form-group">
             <label for="period">Period:</label>
             <input type="number" th:field="*{period}" id="period">

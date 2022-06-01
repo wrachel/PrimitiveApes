@@ -11,7 +11,9 @@
 <body>
 <div layout:fragment="content" th:remove="tag">
 
-    <header> Student Notes</header>
+    <div style="margin-top:3%; width:100%; text-align:center;">
+    <h1> Student Notes</h1>
+</div>
     <div class="container py-4 text-light bg-success">
         <div class="container bg-secondary py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
@@ -19,10 +21,24 @@
                 <hr>
                 <!--Notes input form, textarea supports multiple lines of input  -->
                 <form class="form-inline" action="#" th:action="@{/database/notes}" th:object="${note}" method="POST">
+                    <label for="id" hidden>ID</label>
+
+                    <div style="display:block; overflow-x:hidden; width:auto;">
+                    <label for="text">Create a new note:</label>
+                    <input type="number" th:field="*{student.id}" id="id" hidden class="form-control-plaintext" >
+
+
+                        <textarea rows = "5" cols = "100%" th:field="*{text}" id="text" required></textarea>
+
+
+                     <input type="submit" value="Add" >
+                    </div>
+
+<!--
                     <table class="table">
                         <thead>
                         <tr>
-                            <!-- avoid warnings on binding person.id line -->
+                             avoid warnings on binding person.id line
                             <label for="id" hidden>ID</label>
                         </tr>
                         <tr>
@@ -31,15 +47,14 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <!-- everything fails without binding person.id -->
+                            everything fails without binding person.id
                             <input type="number" th:field="*{student.id}" id="id" hidden class="form-control-plaintext" >
-                        </tr>
-                        <tr>
+
                             <td><textarea rows = "5" cols = "100%" th:field="*{text}" id="text" required></textarea></td>
                             <td><input type="submit" value="Add" ></td>
                         </tr>
                         </tbody>
-                    </table>
+                    </table>-->
                 </form>
                 <hr>
 
