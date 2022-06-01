@@ -61,7 +61,7 @@ public class StudentController implements WebMvcConfigurer {
         model.addAttribute("name", name);
         repository.save(student);
 
-        return "redirect:/database/student_list";
+        return "redirect:/seatassign";
     }
 
     @GetMapping("/database/student_delete/{id}")
@@ -82,7 +82,7 @@ public class StudentController implements WebMvcConfigurer {
         model.addAttribute("name", name);
         repository.delete(student.getId());
 
-        return "redirect:/database/student_list";
+        return "redirect:/seatassign";
     }
 
     /*

@@ -1,17 +1,15 @@
-<!-- This page is illustrative and contains ideas about HTML formatting -->
 <!DOCTYPE HTML>
 <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
-<html xmlns:layout="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.w3.org/1999/xhtml"
-       lang="en">
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
 
-<!-- <head> -->
-<head>
-    <title>Student Delete</title>
-</head>
+<head><div layout:fragment="metadata" th:remove="tag">
+    <title>Delete</title>
+</div></head>
 
-<!-- <body> -->
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body>
+<div layout:fragment="content" th:remove="tag">
     <!-- Page specific body additions -->
     <div class="container">
 
@@ -54,6 +52,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
