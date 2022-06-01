@@ -11,3 +11,7 @@ Still, we **completed our major features** in time
 ## sponsor assessment
 
 ## Team Assessment
+
+
+## Notes on project progress:
+
