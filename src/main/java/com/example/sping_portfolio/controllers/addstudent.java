@@ -1,27 +1,51 @@
 package com.example.sping_portfolio.controllers;
 
-import com.example.sping_portfolio.seater;
-import com.example.sping_portfolio.Student;
+import com.example.sping_portfolio.database.ModelRepository;
+import com.example.sping_portfolio.database.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import java.util.*;
 
 import java.util.ArrayList;
 
 import static com.example.sping_portfolio.seater.sort;
 
 @Controller
-public class addstudent {
-    @GetMapping("/createstudent")
-    public String create(@RequestParam(name="student", required=false, defaultValue="john") String student,
-                         @RequestParam(name="period", required=false, defaultValue="1") String period, Model model)
-    {
+public class addstudent implements WebMvcConfigurer{
 
+    @Autowired
+    private ModelRepository repository;
+
+    @GetMapping(value= "/createstudent")
+    public String create( Student  student )
+    {
         return "createstudent";
     }
+    @PostMapping(value = "/createstudent")
+    public String save(@ModelAttribute Student student, Model model,  BindingResult bindingResult) {
+        // Validation of Decorated PersonForm attributes
+        String name = "John";
+        if (bindingResult.hasErrors()) {
+            return "createstudent";
+        }
+        repository.save(student);
+        model.addAttribute("name", name);
 
+        return "redirect:/seatassign";
+    }
+
+    @GetMapping(value= "/seatassign")
+    public String seat( Model model){
+        List<Student> list = repository.listAll();
+        model.addAttribute("list", list);
+        return "seatassign";
+    }
+/*
     @GetMapping("/test")
     public String test(@RequestParam(name="allnames", required=true, defaultValue="Harry, Rachel, Calvin, Yajat, Devam")String allnames,
                        @RequestParam(name="numTables", required=true, defaultValue="1")int numTables, Model model){
@@ -55,9 +79,7 @@ public class addstudent {
 
         return "randomizeForm";
     }
+*/
 
-    @GetMapping("/seatassign")
-    public String seat(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model){
-        return "seatassign";
-    }
 }
+

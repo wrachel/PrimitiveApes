@@ -49,24 +49,29 @@
         <table class="table table-bordered">
          <thead>
             <tr>
-                <td>Student</td>
+                <td>ID</td>
+                <td>Name</td>
                 <td>Period</td>
             </tr>
          </thead>
          <tbody>
-         <tr>
+         <tr th:each="student : ${list}">
+             <td th:text="${student.id}">ID</td><!--refer to table syntax above when db complete-->
+
+             <td th:text="${student.name}">Name</td>
+             <td th:text="${student.period}">Period</td>
+
              <td>
-                 <p>In progress</p> <!--refer to table syntax above when db complete-->
-             </td>
-             <td>
-                 <p>In progress</p>
+                 <a th:href="@{/database/student_update/{id}(id = ${student.id})}">Update</a>
+                 <a th:href="@{/database/student_delete/{id}(id = ${student.id})}">Delete</a>
+                 <a th:href="@{/database/notes/{id}(id = ${student.id})}">Notes</a>
              </td>
          </tr>
+
          </tbody>
         </table>
 
-        <a href="/createstudent">Add Student</a>
-
+        <a class="btn btn-primary" th:href="@{/createstudent}" role="button">Add Student</a>
         <div>
         <form action="/seatassign" method="GET" > <!--might have to change GET to POST if necessary-->
             <input id="start" name="start" type="submit" value="Randomize!" class="btn btn-primary">
