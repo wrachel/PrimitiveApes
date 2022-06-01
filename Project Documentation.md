@@ -1,5 +1,8 @@
 {% include navigation.html %}
 
+Navigate to the notes on our project's progress!: 
+
+
 ## Overview of Scrum Board
 ![image](https://user-images.githubusercontent.com/40574565/171450562-2c854dd2-f05a-48b4-bf8e-94489204c665.png)
 Timeline dictates the schedule in which our group will go on, with the tickets reflecting assignment of tasks to each individual 
