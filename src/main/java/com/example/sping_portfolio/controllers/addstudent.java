@@ -94,38 +94,41 @@ public class addstudent implements WebMvcConfigurer{
         String table = "Table 1: ";
 
         // something like this and then return the string table
-        for(int i = 0; i < numTables; i++){
-            for(StudentObject a: newGroups){
-                    if (a.getTableGroup() == i){
-                        table += a.getStudentName() + " ";
-                    }
-            }
-            table += "Table " + i; //to make it so that it displays as Table 1: .... Table 2...., etc.
-            i++;
-        }
+//        for(int i = 0; i < numTables; i++){
+//            for(StudentObject a: newGroups){
+//                    if (a.getTableGroup() == i){
+//                        table += a.getStudentName() + " ";
+//                    }
+//            }
+//            table += "Table " + i; //to make it so that it displays as Table 1: .... Table 2...., etc.
+//            i++;
+//        }
 
-//        int counter = 0;
-//        int tableNumb = 1;
-//        for(com.example.sping_portfolio.Student a : newGroups){
-//            if (counter < 3){
-//                table = table + a.getStudentName() + " ";
-//                counter ++;
-//                System.out.println(counter);
-//            }
-//            else{
-//                tableNumb ++;
-//                tables.add(table);
-//                table = "Table " + tableNumb + ": ";
-//                table = table + a.getStudentName() + " ";
-//                counter = 1;
-//            }
-//        }
-//        tables.add(table);
-//        for(String a : tables){
-//           System.out.println(a);
-//        }
+        int counter = 0;
+        int tableNumb = 1;
+        for(StudentObject a : newGroups){
+//            StudentObject[] a = new StudentObject[];
+            if (counter < 3){
+                table = table + a.getStudentName() + " ";
+                counter ++;
+                System.out.println(counter);
+            }
+            else{
+                tableNumb ++;
+                tables.add(table);
+                table = "Table " + tableNumb + ": ";
+                table = table + a.getStudentName() + " ";
+                counter = 1;
+            }
+        }
+        tables.add(table);
+        for(String a : tables){
+           System.out.println(a);
+        }
         model.addAttribute("tables", tables);
 
+//        String hi = "randomizeForm";
+//        String htmlText = new String( "<div class=\"cards\"> \n <div class=\"card\"> \n <p>"+ hi + "</p>\n </div>\n </div>");
         return "randomizeForm";
     }
 

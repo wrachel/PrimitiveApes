@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:c=""
       layout:decorate="~{layout}" lang="en">
 <!--<head>-->
 <!--    <div layout:fragment="metadata" th:remove="tag">-->
@@ -16,9 +16,8 @@
     <input type="text" id="allnames" name="allnames"><br>
 <!--    <label for="numStudents">Number of Students in the period: </label>-->
 <!--    <input type="int" id="numStudents" name="numStudents"><br>-->
-    <label for="numTables">Number of Tables:
-    <input type="int" id="numTables" name="numTablesInput"><br>
-    </label>
+    <label for="numTables">Number of Tables: </label>
+    <input type="int" id="numTables" name="numTables"><br>
 <!--    <label for="studentsPerTable">Number of Students per Table: </label>-->
 <!--    <input type="int" id="studentsPerTable" name="studentsPerTable"><br>-->
 
@@ -26,23 +25,24 @@
 </form>
 
     <div class="row justify-content-md-center flex-container" style="padding:10px; width:1000px;" >
-        <table class="table">
-<!--            <tr th:each="value: ${tables}"></tr>-->
+        <table class="tables">
+            <tr th:each="value: ${tables}"></tr>
             <p th:text="${tables}"></p>
-            <div class="cards">
-                <div class="card">
-                    <h5><a href="#0">Group 1</a></h5>
-                    <p>Harry</p>
-                    <p>Rachel</p>
-                    <p>Devam</p>
-                </div>
-                <div class="card">
-                    <h5><a href="#0">Group 2</a></h5>
-                    <p>Calvin</p>
-                    <p>Yajat</p>
-                </div>
+<!--            <div class="cards">-->
+<!--&lt;!&ndash;                <c:foreach items="${tables}" var='a' varStatus="">&ndash;&gt;-->
+<!--                <div class="card">-->
+<!--                    <h5><a href="#0">Group 1</a></h5>-->
+<!--                    <p>Harry</p>-->
+<!--                    <p>Devam</p>-->
+<!--                    <p>Rachel</p>-->
+<!--                </div>-->
+<!--                <div class="card">-->
+<!--                    <h5><a href="#0">Group 2</a></h5>-->
+<!--                    <p>Calvin</p>-->
+<!--                    <p>Yajat</p>-->
+<!--                </div>-->
 
-            </div>
+<!--            </div>-->
             <style>
                 /*body {*/
                 /*    height: 100vh;*/
