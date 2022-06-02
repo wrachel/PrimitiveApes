@@ -1,5 +1,16 @@
 {% include navigation.html %}
 
+# Technical Completion Overview
+Things that are completed: 
+* Implementation of Database
+* Randomization algorithm that makes random tables
+
+Things that still need work: 
+* linking the randomization algorithm with the database that stores table groups
+
+TL;DR: some features are finished, some features are not complete
+
+
 # Technical Features
 
 ### MVC Features
