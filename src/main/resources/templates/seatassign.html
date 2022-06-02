@@ -82,29 +82,100 @@
         <!--https://www.w3schools.com/howto/howto_js_draggable.asp,
         https://web.dev/drag-and-drop/?gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5jWJv1jV2WHzyBV-8n_1z4D2zgEnpMhb3jfp1XNtzL_X8vFaxX_T2AaAlEqEALw_wcB-->
         <!--https://stackoverflow.com/questions/65690569/multiple-draggable-elements-->
-        <div class="card">
+        <div>
+        <form>
+            <label for="allnames">Names of Students in period: </label>
+            <input type="text" id="allnames" name="allnames"><br>
+            <!--    <label for="numStudents">Number of Students in the period: </label>-->
+            <!--    <input type="int" id="numStudents" name="numStudents"><br>-->
+            <label for="numTables">Number of Tables:
+                <input type="int" id="numTables" name="numTablesInput"><br>
+            </label>
+            <!--    <label for="studentsPerTable">Number of Students per Table: </label>-->
+            <!--    <input type="int" id="studentsPerTable" name="studentsPerTable"><br>-->
 
-            <div class="container">
-                <h4><b>Group 1</b></h4>
-                <p>Students in group</p>
-            </div>
-            <div class="container">
-                <h4><b>Group 2</b></h4>
-                <p>Students in group</p>
-            </div>
-            <div class="container">
-                <h4><b>Group 3</b></h4>
-                <p>Students in group</p>
-            </div>
-            <div class="container">
-                <h4><b>Group 4</b></h4>
-                <p>Students in group</p>
-            </div>
-            <div class="container">
-                <h4><b>Group 5</b></h4>
-                <p>Students in group</p>
-            </div>
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="row justify-content-md-center flex-container" style="padding:10px; width:1000px;" >
+            <table class="table">
+                <!--            <tr th:each="value: ${tables}"></tr>-->
+                <p th:text="${tables}"></p>
+                <div class="cards">
+                    <div class="card">
+                        <h5><a href="#0">Group 1</a></h5>
+                        <p>Harry</p>
+                        <p>Rachel</p>
+                        <p>Devam</p>
+                    </div>
+                    <div class="card">
+                        <h5><a href="#0">Group 2</a></h5>
+                        <p>Calvin</p>
+                        <p>Yajat</p>
+                    </div>
+
+                </div>
+                <style>
+                    /*body {*/
+                    /*    height: 100vh;*/
+                    /*    margin: 0;*/
+                    /*    display: grid;*/
+                    /*    place-items: center;*/
+                    /*    overflow: hidden;*/
+                    /*}*/
+
+                    .cards {
+                        display: flex;
+
+                        --distance: -4rem;
+                    }
+                    .card {
+                        background: deepskyblue;
+                        border-radius: 1rem;
+                        padding: 2rem;
+                        box-shadow: 4px 4px 15px 2px rgba(black, 0.75);
+                        transition: 0.2s;
+                    &:not(:first-child) {
+                         margin-left: var(--distance);
+                     }
+                    }
+
+                    .card:hover,
+                    .card:focus-within {
+                        transform: translateY(-1rem);
+                    }
+                    .card:hover ~ .card,
+                    .card:focus-within ~ .card {
+                        transform: translateX(calc(var(--distance) * -1));
+                    }
+                </style>
+            </table>
+
         </div>
+
+        <script type="text/javascript">
+            // var array = [[${groups}]];
+            // var arrayLength = array.length;
+            //
+            // for(var i = 0; i < arrayLength; i++){
+            //
+            // }
+            $(function(){
+
+                $('.numTables').submit(function(e){
+                    e.preventDefault();
+                    var amount = $('.numTablesInput').val();
+                    for(i=0; i<amount; i++){
+                        var newBox = $('.card').clone();
+                        newBox.removeClass('card');
+                        newBox.appendTo('.cards');
+                    }
+                });
+            });
+        </script>
+
+
+    </div>
         <style>
             .card {
                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

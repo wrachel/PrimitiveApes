@@ -54,6 +54,17 @@ public class seater {
 
     public ArrayList<Student> randomize() {
         ArrayList<Student> groups = new ArrayList<Student>();
+//        Student studentone = new Student(1, devam);
+//        Student Rachel = new Student();
+//        Student Calvin = new Student();
+//        Student Yajat = new Student();
+//        Student Harry = new Student();
+//        groups.add(studentone);
+//        groups.add(Rachel);
+//        groups.add(Calvin);
+//        groups.add(Yajat);
+//        groups.add(Harry);
+
         studentsPerTable = numStudents / numTables;
 
         for (int i = 0; i < numTables; i++) {

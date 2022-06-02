@@ -16,8 +16,9 @@
     <input type="text" id="allnames" name="allnames"><br>
 <!--    <label for="numStudents">Number of Students in the period: </label>-->
 <!--    <input type="int" id="numStudents" name="numStudents"><br>-->
-    <label for="numTables">Number of Tables: </label>
-    <input type="int" id="numTables" name="numTables"><br>
+    <label for="numTables">Number of Tables:
+    <input type="int" id="numTables" name="numTablesInput"><br>
+    </label>
 <!--    <label for="studentsPerTable">Number of Students per Table: </label>-->
 <!--    <input type="int" id="studentsPerTable" name="studentsPerTable"><br>-->
 
@@ -29,27 +30,18 @@
 <!--            <tr th:each="value: ${tables}"></tr>-->
             <p th:text="${tables}"></p>
             <div class="cards">
-
                 <div class="card">
                     <h5><a href="#0">Group 1</a></h5>
-                    <p>Students in group</p>
+                    <p>Harry</p>
+                    <p>Rachel</p>
+                    <p>Devam</p>
                 </div>
                 <div class="card">
                     <h5><a href="#0">Group 2</a></h5>
-                    <p>Students in group</p>
+                    <p>Calvin</p>
+                    <p>Yajat</p>
                 </div>
-                <div class="card">
-                    <h5><a href="#0">Group 3</a></h5>
-                    <p>Students in group</p>
-                </div>
-                <div class="card">
-                    <h5><a href="#0">Group 4</a></h5>
-                    <p>Students in group</p>
-                </div>
-                <div class="card">
-                    <h5><a href="#0">Group 5</a></h5>
-                    <p>Students in group</p>
-                </div>
+
             </div>
             <style>
                 /*body {*/
@@ -89,14 +81,26 @@
 
     </div>
 
-<!--<script type="text/javascript">-->
-<!--    var array = [[${groups}]];-->
-<!--    var arrayLength = array.length;-->
+<script type="text/javascript">
+    // var array = [[${groups}]];
+    // var arrayLength = array.length;
+    //
+    // for(var i = 0; i < arrayLength; i++){
+    //
+    // }
+    $(function(){
 
-<!--    for(var i = 0; i < arrayLength; i++){-->
-
-<!--    }-->
-<!--</script>-->
+        $('.numTables').submit(function(e){
+            e.preventDefault();
+            var amount = $('.numTablesInput').val();
+            for(i=0; i<amount; i++){
+                var newBox = $('.card').clone();
+                newBox.removeClass('card');
+                newBox.appendTo('.cards');
+            }
+        });
+    });
+</script>
 
 
 </div>

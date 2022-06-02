@@ -13,7 +13,8 @@ import java.util.*;
 
 import java.util.ArrayList;
 
-import static com.example.sping_portfolio.seater.sort;
+import static com.example.sping_portfolio.seater.*;
+import static com.example.sping_portfolio.Student.*;
 
 @Controller
 public class addstudent implements WebMvcConfigurer{
@@ -45,41 +46,41 @@ public class addstudent implements WebMvcConfigurer{
         model.addAttribute("list", list);
         return "seatassign";
     }
-/*
-    @GetMapping("/test")
-    public String test(@RequestParam(name="allnames", required=true, defaultValue="Harry, Rachel, Calvin, Yajat, Devam")String allnames,
-                       @RequestParam(name="numTables", required=true, defaultValue="1")int numTables, Model model){
+//    @GetMapping("/test")
+//    public String test(@RequestParam(name="allnames", required=true, defaultValue="Harry, Rachel, Calvin, Yajat, Devam")String allnames,
+//                       @RequestParam(name="numTables", required=true, defaultValue="1")int numTables, Model model){
+//
+//
+//        seater randomSeat = new seater(numTables, allnames);
+//        ArrayList<Student> newGroups = randomSeat.randomize();
+//        sort(newGroups);
+//        ArrayList<String> tables = new ArrayList<>();
+//        String table = "Table 1: ";
+//        int counter = 0;
+//        int tableNumb = 1;
+//        for(Student a : newGroups){
+//            if (counter < 3){
+//                table = table + a.getStudentName() + " ";
+//                counter ++;
+//                System.out.println(counter);
+//            }
+//            else{
+//                tableNumb ++;
+//                tables.add(table);
+//                table = "Table " + tableNumb + ": ";
+//                table = table + a.getStudentName() + " ";
+//                counter = 1;
+//            }
+//        }
+//        tables.add(table);
+//        for(String a : tables){
+//           System.out.println(a);
+//        }
+//        model.addAttribute("tables", tables);
+//
+//        return "randomizeForm";
+//    }
 
-        seater randomSeat = new seater(numTables, allnames);
-        ArrayList<Student> newGroups = randomSeat.randomize();
-        sort(newGroups);
-        ArrayList<String> tables = new ArrayList<>();
-        String table = "Table 1: ";
-        int counter = 0;
-        int tableNumb = 1;
-        for(Student a : newGroups){
-            if (counter < 3){
-                table = table + a.getStudentName() + " ";
-                counter ++;
-                System.out.println(counter);
-            }
-            else{
-                tableNumb ++;
-                tables.add(table);
-                table = "Table " + tableNumb + ": ";
-                table = table + a.getStudentName() + " ";
-                counter = 1;
-            }
-        }
-        tables.add(table);
-        for(String a : tables){
-           System.out.println(a);
-        }
-        model.addAttribute("tables", tables);
-
-        return "randomizeForm";
-    }
-*/
 
 }
 
