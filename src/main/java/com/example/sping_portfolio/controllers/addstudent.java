@@ -1,5 +1,6 @@
 package com.example.sping_portfolio.controllers;
 
+import com.example.sping_portfolio.StudentObject;
 import com.example.sping_portfolio.database.ModelRepository;
 import com.example.sping_portfolio.database.Student;
 import com.example.sping_portfolio.seater;
@@ -87,44 +88,42 @@ public class addstudent implements WebMvcConfigurer{
                        @RequestParam(name="numTables", required=true, defaultValue="1")int numTables, Model model) {
 
         seater randomSeat = new seater(numTables, allnames);
-        ArrayList<com.example.sping_portfolio.Student> newGroups = randomSeat.randomize();
+        ArrayList<StudentObject> newGroups = randomSeat.randomize();
         sort(newGroups);
         ArrayList<String> tables = new ArrayList<>();
         String table = "Table 1: ";
 
-        /* something like this and then return the string table
+        // something like this and then return the string table
         for(int i = 0; i < numTables; i++){
-            for(Student a: newGroups){
-                    if (a.getTableGroup() == j){
+            for(StudentObject a: newGroups){
+                    if (a.getTableGroup() == i){
                         table += a.getStudentName() + " ";
                     }
             }
-            table += "Table " + String.getValueOf(i); //to make it so that it displays as Table 1: .... Table 2...., etc.
+            table += "Table " + i; //to make it so that it displays as Table 1: .... Table 2...., etc.
             i++;
         }
 
-         */
-
-        int counter = 0;
-        int tableNumb = 1;
-        for(com.example.sping_portfolio.Student a : newGroups){
-            if (counter < 3){
-                table = table + a.getStudentName() + " ";
-                counter ++;
-                System.out.println(counter);
-            }
-            else{
-                tableNumb ++;
-                tables.add(table);
-                table = "Table " + tableNumb + ": ";
-                table = table + a.getStudentName() + " ";
-                counter = 1;
-            }
-        }
-        tables.add(table);
-        for(String a : tables){
-           System.out.println(a);
-        }
+//        int counter = 0;
+//        int tableNumb = 1;
+//        for(com.example.sping_portfolio.Student a : newGroups){
+//            if (counter < 3){
+//                table = table + a.getStudentName() + " ";
+//                counter ++;
+//                System.out.println(counter);
+//            }
+//            else{
+//                tableNumb ++;
+//                tables.add(table);
+//                table = "Table " + tableNumb + ": ";
+//                table = table + a.getStudentName() + " ";
+//                counter = 1;
+//            }
+//        }
+//        tables.add(table);
+//        for(String a : tables){
+//           System.out.println(a);
+//        }
         model.addAttribute("tables", tables);
 
         return "randomizeForm";

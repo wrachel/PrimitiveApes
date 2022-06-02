@@ -52,8 +52,8 @@ public class seater {
         return names;
     }
 
-    public ArrayList<Student> randomize() {
-        ArrayList<Student> groups = new ArrayList<Student>();
+    public ArrayList<StudentObject> randomize() {
+        ArrayList<StudentObject> groups = new ArrayList<StudentObject>();
 //        Student studentone = new Student(1, devam);
 //        Student Rachel = new Student();
 //        Student Calvin = new Student();
@@ -70,7 +70,7 @@ public class seater {
         for (int i = 0; i < numTables; i++) {
             for (int j = 0; j < studentsPerTable; j++) {
                 int index = (int) (Math.random() * names.size());
-                Student oneStudent = new Student(i, names.get(index));
+                StudentObject oneStudent = new StudentObject(i, names.get(index));
                 groups.add(oneStudent);
                 names.remove(index);
             }
@@ -79,7 +79,7 @@ public class seater {
         int i = 0;
             while(names.size() > 0 && i < numTables){
                 int index = (int) (Math.random() * names.size());
-                Student oneStudent = new Student(i, names.get(index));
+                StudentObject oneStudent = new StudentObject(i, names.get(index));
                 groups.add(oneStudent);
                 names.remove(index);
                 i++;
@@ -88,7 +88,7 @@ public class seater {
         return groups;
     }
 
-    public static void sort(ArrayList<Student> a){
+    public static void sort(ArrayList<StudentObject> a){
         int n = a.size();
 
         for(int i =0;i < n-1; i++){
@@ -98,7 +98,7 @@ public class seater {
                     min_idx = j;
                 }
             }
-            Student temp = a.get(min_idx);
+            StudentObject temp = a.get(min_idx);
             a.set(min_idx, a.get(i));
             a.set(i, temp);
         }
@@ -115,11 +115,11 @@ public class seater {
             System.out.println(a + " ");
         }
 
-        ArrayList<Student> newGroups = test.randomize();
+        ArrayList<StudentObject> newGroups = test.randomize();
         sort(newGroups);
 
         System.out.print("New groups: ");
-        for(Student b : newGroups){
+        for(StudentObject b : newGroups){
             System.out.println("Table: " + b.getTableGroup() + ", Name: " + b.getStudentName());
         }
     }
