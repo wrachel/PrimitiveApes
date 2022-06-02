@@ -55,6 +55,4 @@ public class Student {
         this.period = period_number;
     }
 
-
-
 }
