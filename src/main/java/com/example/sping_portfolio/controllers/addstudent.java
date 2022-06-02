@@ -46,7 +46,9 @@ public class addstudent implements WebMvcConfigurer{
 
         List<Student> list = repository.listAll();
         model.addAttribute("list", list);
+
         return "seatassign";
+
     }
 //    @GetMapping("/test")
 //    public String test(@RequestParam(name="allnames", required=true, defaultValue="Harry, Rachel, Calvin, Yajat, Devam")String allnames,
@@ -92,18 +94,6 @@ public class addstudent implements WebMvcConfigurer{
         sort(newGroups);
         ArrayList<String> tables = new ArrayList<>();
         String table = "Table 1: ";
-
-        // something like this and then return the string table
-//        for(int i = 0; i < numTables; i++){
-//            for(StudentObject a: newGroups){
-//                    if (a.getTableGroup() == i){
-//                        table += a.getStudentName() + " ";
-//                    }
-//            }
-//            table += "Table " + i; //to make it so that it displays as Table 1: .... Table 2...., etc.
-//            i++;
-//        }
-
         int counter = 0;
         int tableNumb = 1;
         for(StudentObject a : newGroups){
@@ -123,10 +113,10 @@ public class addstudent implements WebMvcConfigurer{
         }
         tables.add(table);
         for(String a : tables){
-           System.out.println(a);
+            System.out.println(a);
         }
         model.addAttribute("tables", tables);
-
+        
 //        String hi = "randomizeForm";
 //        String htmlText = new String( "<div class=\"cards\"> \n <div class=\"card\"> \n <p>"+ hi + "</p>\n </div>\n </div>");
         return "randomizeForm";
