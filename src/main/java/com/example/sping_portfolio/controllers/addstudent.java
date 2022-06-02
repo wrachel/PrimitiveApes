@@ -2,6 +2,8 @@ package com.example.sping_portfolio.controllers;
 
 import com.example.sping_portfolio.database.ModelRepository;
 import com.example.sping_portfolio.database.Student;
+import com.example.sping_portfolio.seater;
+//import com.example.sping_portfolio.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,8 +15,6 @@ import java.util.*;
 
 import java.util.ArrayList;
 
-import static com.example.sping_portfolio.seater.*;
-import static com.example.sping_portfolio.Student.*;
 
 @Controller
 public class addstudent implements WebMvcConfigurer{
@@ -41,7 +41,8 @@ public class addstudent implements WebMvcConfigurer{
     }
 
     @GetMapping(value= "/seatassign")
-    public String seat( Model model){
+    public String seat(Model model) {
+
         List<Student> list = repository.listAll();
         model.addAttribute("list", list);
         return "seatassign";
