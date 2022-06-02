@@ -96,6 +96,7 @@ public class addstudent implements WebMvcConfigurer{
         String table = "Table 1: ";
         int counter = 0;
         int tableNumb = 1;
+
         for(StudentObject a : newGroups){
 //            StudentObject[] a = new StudentObject[];
             if (counter < 3){
