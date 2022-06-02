@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 - Database contains multiple tables for Student info and notes
 ``` java
 @ManyToOne
